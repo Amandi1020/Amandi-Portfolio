@@ -18,9 +18,7 @@ navLinks.querySelectorAll('a').forEach(link => {
 const revealElements = document.querySelectorAll('.reveal');
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
+    if (entry.isIntersecting) entry.target.classList.add('visible');
   });
 }, { threshold: 0.12 });
 revealElements.forEach(el => revealObserver.observe(el));
@@ -31,8 +29,8 @@ const barObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       const target = entry.target;
-      const width = target.getAttribute('data-w');
-      target.style.width = width + '%';
+      target.style.width = target.getAttribute('data-w') + '%';
+      setTimeout(() => target.classList.add('animated'), 1400);
       barObserver.unobserve(target);
     }
   });
@@ -44,42 +42,21 @@ const sections = document.querySelectorAll('section[id]');
 window.addEventListener('scroll', () => {
   let current = '';
   sections.forEach(section => {
-    const sectionTop = section.offsetTop - 100;
-    if (window.scrollY >= sectionTop) current = section.getAttribute('id');
+    if (window.scrollY >= section.offsetTop - 100) current = section.getAttribute('id');
   });
   document.querySelectorAll('.nav-links a').forEach(link => {
     link.style.color = '';
-    if (link.getAttribute('href') === '#' + current) {
-      link.style.color = 'var(--primary-light)';
-    }
+    if (link.getAttribute('href') === '#' + current) link.style.color = 'var(--rose-light)';
   });
 });
 
-// ===== SMOOTH SCROLL FOR NAV LINKS =====
+// ===== SMOOTH SCROLL =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
   });
 });
-
-// ===== TYPING EFFECT FOR HERO SUBTITLE =====
-const heroSub = document.querySelector('.hero-sub');
-if (heroSub) {
-  const text = heroSub.innerHTML;
-  heroSub.innerHTML = '';
-  let i = 0;
-  setTimeout(() => {
-    const interval = setInterval(() => {
-      heroSub.innerHTML = text.substring(0, i);
-      i++;
-      if (i > text.length) clearInterval(interval);
-    }, 18);
-  }, 800);
-}
 
 // ===== CONTACT FORM FEEDBACK =====
 const form = document.querySelector('.contact-form');
@@ -88,47 +65,29 @@ if (form) {
     e.preventDefault();
     const btn = form.querySelector('button[type="submit"]');
     const original = btn.innerHTML;
-    btn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
+    btn.innerHTML = 'Sending...';
     btn.disabled = true;
     try {
       const res = await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
+        method: 'POST', body: new FormData(form),
         headers: { 'Accept': 'application/json' }
       });
       if (res.ok) {
-        btn.innerHTML = 'Sent! ✓';
-        btn.style.background = 'linear-gradient(135deg, #059669, #10B981)';
+        btn.innerHTML = 'Message Sent ✓';
+        btn.style.background = 'linear-gradient(135deg, #2d7a5e, #3aaa80)';
         form.reset();
-        setTimeout(() => {
-          btn.innerHTML = original;
-          btn.style.background = '';
-          btn.disabled = false;
-        }, 3000);
-      } else {
-        throw new Error();
-      }
+        setTimeout(() => { btn.innerHTML = original; btn.style.background = ''; btn.disabled = false; }, 3000);
+      } else throw new Error();
     } catch {
       btn.innerHTML = 'Error — try email directly';
-      btn.style.background = 'linear-gradient(135deg, #DC2626, #EF4444)';
-      setTimeout(() => {
-        btn.innerHTML = original;
-        btn.style.background = '';
-        btn.disabled = false;
-      }, 3000);
+      setTimeout(() => { btn.innerHTML = original; btn.style.background = ''; btn.disabled = false; }, 3000);
     }
   });
 }
 
-// ===== CURSOR GLOW EFFECT =====
+// ===== SUBTLE CURSOR GLOW =====
 const glow = document.createElement('div');
-glow.style.cssText = `
-  position: fixed; pointer-events: none; z-index: 9999;
-  width: 300px; height: 300px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(124,58,237,0.06) 0%, transparent 70%);
-  transform: translate(-50%, -50%);
-  transition: left 0.1s, top 0.1s;
-`;
+glow.style.cssText = `position:fixed;pointer-events:none;z-index:9999;width:250px;height:250px;border-radius:50%;background:radial-gradient(circle,rgba(183,110,121,0.05) 0%,transparent 70%);transform:translate(-50%,-50%);transition:left 0.15s,top 0.15s;`;
 document.body.appendChild(glow);
 window.addEventListener('mousemove', e => {
   glow.style.left = e.clientX + 'px';
