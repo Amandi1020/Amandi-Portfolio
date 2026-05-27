@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Amandi | MIS Portfolio</title>
+  <title>Amandi Rajapaksha | MIS Portfolio</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@200;300;400;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
 
   <!-- NAV -->
   <nav class="navbar" id="navbar">
-    <div class="nav-logo">A<span>.</span></div>
+    <div class="nav-logo">AR<span>.</span></div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -33,26 +33,29 @@
       <div class="blob blob1"></div>
       <div class="blob blob2"></div>
       <div class="blob blob3"></div>
-      <div class="grid-overlay"></div>
+      <div class="particles" id="particles"></div>
     </div>
     <div class="hero-content">
-      <p class="hero-tag fade-in">MIS Undergraduate · 2nd Year</p>
-      <h1 class="hero-title fade-in delay-1">Hi, I'm <span>Amandi</span></h1>
-      <p class="hero-sub fade-in delay-2">Bridging <em>Technology</em> & <em>Business</em> to build solutions that matter.</p>
+      <p class="hero-tag fade-in">MIS Undergraduate · NSBM Green University</p>
+      <h1 class="hero-title fade-in delay-1">Hi, I'm<br><span>Amandi</span><br><em>Rajapaksha</em></h1>
+      <p class="hero-sub fade-in delay-2">Passionate about <strong>Front-End Development</strong> & <strong>UI/UX</strong> — bridging technology and business to build solutions that matter.</p>
       <div class="hero-btns fade-in delay-3">
         <a href="#projects" class="btn btn-primary">View My Work</a>
         <a href="assets/resume.pdf" class="btn btn-outline" download>Download CV <i class="fas fa-download"></i></a>
       </div>
       <div class="hero-socials fade-in delay-4">
-        <a href="https://github.com/Amandi1020" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/amandi-rajapaksha" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:amandirajapaksha2003@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/Amandi1020" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/amandi-rajapaksha-397a21284/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:amandirajapaksha2003@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.instagram.com/amandiiii_03/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
     <div class="hero-image fade-in delay-2">
-      <div class="profile-ring">
-        <img src="assets/img/profile.jpg" alt="Amandi" onerror="this.style.display='none'" />
-        <div class="profile-placeholder"><i class="fas fa-user"></i></div>
+      <div class="profile-wrap">
+        <div class="profile-outer-ring"></div>
+        <div class="profile-inner">
+          <img src="https://avatars.githubusercontent.com/u/211143959?v=4" alt="Amandi Rajapaksha" />
+        </div>
       </div>
     </div>
   </section>
@@ -63,22 +66,25 @@
       <div class="section-header">
         <span class="section-tag">Who I Am</span>
         <h2>About Me</h2>
+        <div class="header-line"></div>
       </div>
       <div class="about-grid">
         <div class="about-text reveal">
-          <p>I'm a 2nd year <strong>Management Information Systems</strong> undergraduate passionate about using technology to solve real business problems. I sit at the intersection of IT and business — which means I can talk code with developers and strategy with managers.</p>
-          <p>Currently exploring areas like <strong>data analytics, database design, web development</strong> and business information systems. I'm seeking an internship where I can bring both technical and business thinking to the table.</p>
+          <p>I'm <strong>Amandi Rajapaksha</strong>, a 2nd year <strong>Management Information Systems</strong> undergraduate at NSBM Green University, passionate about Front-End Development and UI/UX Design.</p>
+          <p>I sit at the intersection of IT and business — building projects step by step and improving them continuously. Currently exploring <strong>React, Node.js, Tailwind CSS</strong> and business information systems.</p>
+          <p>I'm seeking an internship where I can bring both technical and creative thinking to real-world challenges.</p>
           <div class="about-stats">
-            <div class="stat"><span class="stat-num">2nd</span><span class="stat-label">Year</span></div>
-            <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Projects</span></div>
-            <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Certs</span></div>
+            <div class="stat"><span class="stat-num" data-count="2">0</span><span class="stat-label">Year</span></div>
+            <div class="stat"><span class="stat-num" data-count="8">0</span><span class="stat-label">Projects</span></div>
+            <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label">Certs</span></div>
           </div>
         </div>
         <div class="about-cards reveal delay-1">
           <div class="info-card"><i class="fas fa-graduation-cap"></i><div><strong>Degree</strong><p>BSc in Management Information Systems</p></div></div>
           <div class="info-card"><i class="fas fa-university"></i><div><strong>University</strong><p>NSBM Green University</p></div></div>
           <div class="info-card"><i class="fas fa-map-marker-alt"></i><div><strong>Location</strong><p>Sri Lanka</p></div></div>
-          <div class="info-card"><i class="fas fa-briefcase"></i><div><strong>Looking For</strong><p>Internship opportunities (IT / Business)</p></div></div>
+          <div class="info-card"><i class="fas fa-briefcase"></i><div><strong>Looking For</strong><p>Internship — IT / Front-End / UI/UX</p></div></div>
+          <div class="info-card"><i class="fas fa-envelope"></i><div><strong>Email</strong><p>amandirajapaksha2003@gmail.com</p></div></div>
           <div class="info-card"><i class="fas fa-language"></i><div><strong>Languages</strong><p>Sinhala (Native) · English (Intermediate)</p></div></div>
         </div>
       </div>
@@ -91,18 +97,19 @@
       <div class="section-header">
         <span class="section-tag">What I Know</span>
         <h2>Skills</h2>
+        <div class="header-line"></div>
       </div>
       <div class="skills-grid">
         <div class="skill-category reveal">
           <h3><i class="fas fa-laptop-code"></i> Technical Skills</h3>
           <div class="skill-bars">
-            <div class="skill-bar"><span>Python</span><div class="bar"><div class="bar-fill" data-w="70"></div></div><span class="pct">70%</span></div>
-            <div class="skill-bar"><span>HTML / CSS</span><div class="bar"><div class="bar-fill" data-w="80"></div></div><span class="pct">80%</span></div>
-            <div class="skill-bar"><span>SQL / MySQL</span><div class="bar"><div class="bar-fill" data-w="75"></div></div><span class="pct">75%</span></div>
-            <div class="skill-bar"><span>JavaScript</span><div class="bar"><div class="bar-fill" data-w="60"></div></div><span class="pct">60%</span></div>
+            <div class="skill-bar"><span>HTML / CSS</span><div class="bar"><div class="bar-fill" data-w="85"></div></div><span class="pct">85%</span></div>
+            <div class="skill-bar"><span>JavaScript</span><div class="bar"><div class="bar-fill" data-w="70"></div></div><span class="pct">70%</span></div>
+            <div class="skill-bar"><span>React</span><div class="bar"><div class="bar-fill" data-w="60"></div></div><span class="pct">60%</span></div>
             <div class="skill-bar"><span>Java</span><div class="bar"><div class="bar-fill" data-w="55"></div></div><span class="pct">55%</span></div>
-            <div class="skill-bar"><span>React</span><div class="bar"><div class="bar-fill" data-w="50"></div></div><span class="pct">50%</span></div>
-            <div class="skill-bar"><span>Microsoft Excel</span><div class="bar"><div class="bar-fill" data-w="85"></div></div><span class="pct">85%</span></div>
+            <div class="skill-bar"><span>PHP</span><div class="bar"><div class="bar-fill" data-w="55"></div></div><span class="pct">55%</span></div>
+            <div class="skill-bar"><span>SQL / MySQL</span><div class="bar"><div class="bar-fill" data-w="75"></div></div><span class="pct">75%</span></div>
+            <div class="skill-bar"><span>Python</span><div class="bar"><div class="bar-fill" data-w="65"></div></div><span class="pct">65%</span></div>
           </div>
         </div>
         <div class="skill-category reveal delay-1">
@@ -111,26 +118,28 @@
             <div class="skill-bar"><span>Data Analysis</span><div class="bar"><div class="bar-fill" data-w="75"></div></div><span class="pct">75%</span></div>
             <div class="skill-bar"><span>Project Management</span><div class="bar"><div class="bar-fill" data-w="70"></div></div><span class="pct">70%</span></div>
             <div class="skill-bar"><span>Business Analysis</span><div class="bar"><div class="bar-fill" data-w="65"></div></div><span class="pct">65%</span></div>
-            <div class="skill-bar"><span>Communication</span><div class="bar"><div class="bar-fill" data-w="80"></div></div><span class="pct">80%</span></div>
+            <div class="skill-bar"><span>UI/UX Design</span><div class="bar"><div class="bar-fill" data-w="72"></div></div><span class="pct">72%</span></div>
             <div class="skill-bar"><span>Report Writing</span><div class="bar"><div class="bar-fill" data-w="80"></div></div><span class="pct">80%</span></div>
           </div>
         </div>
         <div class="skill-category reveal delay-2">
           <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
           <div class="tool-badges">
-            <span class="badge">HTML</span>
-            <span class="badge">CSS</span>
-            <span class="badge">JavaScript</span>
-            <span class="badge">React</span>
-            <span class="badge">Java</span>
-            <span class="badge">Power BI</span>
-            <span class="badge">Figma</span>
-            <span class="badge">GitHub</span>
-            <span class="badge">MySQL</span>
+            <span class="badge"><i class="fab fa-html5"></i> HTML</span>
+            <span class="badge"><i class="fab fa-css3-alt"></i> CSS</span>
+            <span class="badge"><i class="fab fa-js"></i> JavaScript</span>
+            <span class="badge"><i class="fab fa-react"></i> React</span>
+            <span class="badge"><i class="fab fa-java"></i> Java</span>
+            <span class="badge"><i class="fab fa-node-js"></i> Node.js</span>
+            <span class="badge"><i class="fab fa-php"></i> PHP</span>
+            <span class="badge">Tailwind CSS</span>
+            <span class="badge"><i class="fas fa-database"></i> MySQL</span>
             <span class="badge">Postman</span>
-            <span class="badge">VS Code</span>
-            <span class="badge">MS Office</span>
-            <span class="badge">Canva</span>
+            <span class="badge"><i class="fab fa-figma"></i> Figma</span>
+            <span class="badge"><i class="fab fa-github"></i> GitHub</span>
+            <span class="badge"><i class="fas fa-file-excel"></i> MS Office</span>
+            <span class="badge">Power BI</span>
+            <span class="badge"><i class="fab fa-canva"></i> Canva</span>
           </div>
         </div>
       </div>
@@ -143,43 +152,49 @@
       <div class="section-header">
         <span class="section-tag">What I've Built</span>
         <h2>Projects</h2>
+        <div class="header-line"></div>
       </div>
       <div class="projects-grid">
 
         <div class="project-card reveal">
-          <div class="project-img"><i class="fas fa-database"></i></div>
+          <div class="project-img" style="background: linear-gradient(135deg,rgba(183,110,121,0.18),rgba(200,169,126,0.1))">
+            <i class="fas fa-paw"></i>
+          </div>
           <div class="project-body">
-            <div class="project-tags"><span>SQL</span><span>MySQL</span></div>
-            <h3>Library Management System</h3>
-            <p>A relational database system to manage books, members, borrowing records and fines. Designed ER diagrams and implemented with MySQL.</p>
+            <div class="project-tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+            <h3>Pet Adoption & Care System</h3>
+            <p>A web system for pet adoption and care information management. Built with JavaScript, HTML and CSS.</p>
             <div class="project-links">
-              <a href="#" class="btn-sm"><i class="fab fa-github"></i> GitHub</a>
-              <a href="#" class="btn-sm btn-sm-outline">Live Demo</a>
+              <a href="https://github.com/Amandi1020/pet-adoption-system" target="_blank" class="btn-sm"><i class="fab fa-github"></i> GitHub</a>
             </div>
           </div>
         </div>
 
         <div class="project-card reveal delay-1">
-          <div class="project-img"><i class="fas fa-chart-line"></i></div>
+          <div class="project-img" style="background: linear-gradient(135deg,rgba(200,169,126,0.18),rgba(183,110,121,0.1))">
+            <i class="fas fa-database"></i>
+          </div>
           <div class="project-body">
-            <div class="project-tags"><span>Excel</span><span>Power BI</span></div>
-            <h3>Sales Dashboard</h3>
-            <p>Interactive sales analytics dashboard built in Power BI. Analyzed trends, regional performance and KPIs for a mock retail dataset.</p>
+            <div class="project-tags"><span>SQL</span><span>MySQL</span></div>
+            <h3>Library Management System</h3>
+            <p>A relational database system for managing books, members, borrowing records and fines with full ER diagram design.</p>
             <div class="project-links">
-              <a href="#" class="btn-sm"><i class="fab fa-github"></i> GitHub</a>
-              <a href="#" class="btn-sm btn-sm-outline">Live Demo</a>
+              <a href="https://github.com/Amandi1020" target="_blank" class="btn-sm"><i class="fab fa-github"></i> GitHub</a>
             </div>
           </div>
         </div>
 
         <div class="project-card reveal delay-2">
-          <div class="project-img"><i class="fas fa-globe"></i></div>
+          <div class="project-img" style="background: linear-gradient(135deg,rgba(183,110,121,0.15),rgba(212,175,135,0.12))">
+            <i class="fas fa-globe"></i>
+          </div>
           <div class="project-body">
             <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
-            <h3>This Portfolio</h3>
-            <p>Designed and built this personal portfolio from scratch using HTML, CSS, and JavaScript with smooth animations and responsive layout.</p>
+            <h3>Personal Portfolio</h3>
+            <p>This portfolio — designed and built from scratch with animations, rose gold theme and responsive layout.</p>
             <div class="project-links">
-              <a href="https://github.com/Amandi1020" class="btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              <a href="https://github.com/Amandi1020/Amandi-Portfolio" target="_blank" class="btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              <a href="https://amandi1020.github.io/Amandi-Portfolio/" target="_blank" class="btn-sm btn-sm-outline">Live <i class="fas fa-external-link-alt"></i></a>
             </div>
           </div>
         </div>
@@ -194,24 +209,25 @@
       <div class="section-header">
         <span class="section-tag">My Journey</span>
         <h2>Education</h2>
+        <div class="header-line"></div>
       </div>
       <div class="timeline">
         <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
+          <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
           <div class="timeline-card">
             <span class="timeline-date">2023 – Present</span>
             <h3>BSc in Management Information Systems</h3>
-            <p class="timeline-place"><i class="fas fa-university"></i> NSBM Green University</p>
-            <p>Relevant coursework: Database Management, Business Analytics, Systems Analysis & Design, ERP Systems, Programming, IT Project Management.</p>
+            <p class="timeline-place"><i class="fas fa-university"></i> NSBM Green University — Faculty of Computing</p>
+            <p>Relevant coursework: Database Management, Business Analytics, Systems Analysis & Design, ERP Systems, Programming, IT Project Management, UI/UX Design.</p>
           </div>
         </div>
         <div class="timeline-item reveal delay-1">
-          <div class="timeline-dot"></div>
+          <div class="timeline-dot"><i class="fas fa-school"></i></div>
           <div class="timeline-card">
             <span class="timeline-date">2020 – 2022</span>
             <h3>G.C.E. Advanced Level</h3>
             <p class="timeline-place"><i class="fas fa-school"></i> Your School Name</p>
-            <p>Commerce stream. Subjects: Business Studies, Accounting, Economics.</p>
+            <p>Commerce stream · Business Studies · Accounting · Economics</p>
           </div>
         </div>
       </div>
@@ -224,12 +240,38 @@
       <div class="section-header">
         <span class="section-tag">Credentials</span>
         <h2>Certifications</h2>
+        <div class="header-line"></div>
       </div>
+      <p class="cert-note reveal">⚠️ Update these with your real certifications from LinkedIn!</p>
       <div class="certs-grid">
-        <div class="cert-card reveal"><div class="cert-icon"><i class="fab fa-google"></i></div><div><h3>Google Data Analytics</h3><p>Coursera · 2024</p></div></div>
-        <div class="cert-card reveal delay-1"><div class="cert-icon"><i class="fab fa-microsoft"></i></div><div><h3>Microsoft Excel Expert</h3><p>Microsoft · 2023</p></div></div>
-        <div class="cert-card reveal delay-2"><div class="cert-icon"><i class="fas fa-shield-alt"></i></div><div><h3>Cybersecurity Essentials</h3><p>Cisco NetAcad · 2024</p></div></div>
-        <div class="cert-card reveal delay-3"><div class="cert-icon"><i class="fab fa-python"></i></div><div><h3>Python for Everybody</h3><p>Coursera · 2024</p></div></div>
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fab fa-google"></i></div>
+          <div>
+            <h3>Google Data Analytics</h3>
+            <p>Coursera · 2024</p>
+          </div>
+        </div>
+        <div class="cert-card reveal delay-1">
+          <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
+          <div>
+            <h3>Microsoft Excel Expert</h3>
+            <p>Microsoft · 2023</p>
+          </div>
+        </div>
+        <div class="cert-card reveal delay-2">
+          <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+          <div>
+            <h3>Cybersecurity Essentials</h3>
+            <p>Cisco NetAcad · 2024</p>
+          </div>
+        </div>
+        <div class="cert-card reveal delay-3">
+          <div class="cert-icon"><i class="fab fa-python"></i></div>
+          <div>
+            <h3>Python for Everybody</h3>
+            <p>Coursera · 2024</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -240,24 +282,25 @@
       <div class="section-header">
         <span class="section-tag">Activities</span>
         <h2>Experience & Activities</h2>
+        <div class="header-line"></div>
       </div>
       <div class="timeline">
         <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
+          <div class="timeline-dot"><i class="fas fa-users"></i></div>
           <div class="timeline-card">
             <span class="timeline-date">2023 – Present</span>
-            <h3>Member – IT Society</h3>
-            <p class="timeline-place"><i class="fas fa-users"></i> NSBM Green University</p>
-            <p>Organized tech workshops and events. Participated in hackathons and coding competitions.</p>
+            <h3>Undergraduate Member</h3>
+            <p class="timeline-place"><i class="fas fa-university"></i> NSBM Green University — Faculty of Computing</p>
+            <p>Participating in tech workshops, coding sessions and faculty events. Building projects to strengthen front-end and database skills.</p>
           </div>
         </div>
         <div class="timeline-item reveal delay-1">
-          <div class="timeline-dot"></div>
+          <div class="timeline-dot"><i class="fas fa-code"></i></div>
           <div class="timeline-card">
             <span class="timeline-date">2024</span>
-            <h3>Participant – Hackathon</h3>
-            <p class="timeline-place"><i class="fas fa-trophy"></i> University Hackathon</p>
-            <p>Built a prototype solution for a business problem in 24 hours as part of a team.</p>
+            <h3>Open Source Contributor — GitHub</h3>
+            <p class="timeline-place"><i class="fab fa-github"></i> github.com/Amandi1020</p>
+            <p>Actively building and publishing projects on GitHub including the Pet Adoption System and this Portfolio. Earning GitHub achievements through consistent contributions.</p>
           </div>
         </div>
       </div>
@@ -270,14 +313,16 @@
       <div class="section-header">
         <span class="section-tag">Get In Touch</span>
         <h2>Contact Me</h2>
+        <div class="header-line"></div>
       </div>
       <div class="contact-grid">
         <div class="contact-info reveal">
-          <p>I'm open to internship opportunities, collaborations, and interesting conversations. Feel free to reach out!</p>
+          <p>I'm open to internship opportunities, collaborations and interesting conversations. Feel free to reach out — I'd love to connect!</p>
           <div class="contact-links">
-            <a href="mailto:youremail@gmail.com"><i class="fas fa-envelope"></i> youremail@gmail.com</a>
+            <a href="mailto:amandirajapaksha2003@gmail.com"><i class="fas fa-envelope"></i> amandirajapaksha2003@gmail.com</a>
             <a href="https://github.com/Amandi1020" target="_blank"><i class="fab fa-github"></i> github.com/Amandi1020</a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/yourprofile</a>
+            <a href="https://www.linkedin.com/in/amandi-rajapaksha-397a21284/" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/amandi-rajapaksha</a>
+            <a href="https://www.instagram.com/amandiiii_03/" target="_blank"><i class="fab fa-instagram"></i> @amandiiii_03</a>
           </div>
         </div>
         <form class="contact-form reveal delay-1" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
@@ -292,7 +337,13 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>Designed & Built by <span>Amandi</span> · 2024</p>
+    <div class="footer-socials">
+      <a href="https://github.com/Amandi1020" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/amandi-rajapaksha-397a21284/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:amandirajapaksha2003@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.instagram.com/amandiiii_03/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>Designed & Built by <span>Amandi Rajapaksha</span> · 2024</p>
     <p class="footer-sub">MIS Undergraduate · NSBM Green University · Sri Lanka</p>
   </footer>
 
