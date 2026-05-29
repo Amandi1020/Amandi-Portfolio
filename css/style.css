@@ -117,6 +117,26 @@ a { text-decoration: none; color: inherit; }
 }
 .hero-socials a:hover { border-color: var(--rose); color: var(--rose-light); background: rgba(183,110,121,0.1); transform: translateY(-2px); }
 
+/* --- Hero Skill Pills --- */
+.hero-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 14px 0 24px;
+}
+ 
+.hero-pill {
+  background: rgba(183, 110, 121, 0.10);
+  border: 1px solid rgba(183, 110, 121, 0.22);
+  border-radius: 100px;
+  padding: 5px 13px;
+  font-size: 12px;
+  color: #c4949b;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
 /* ===== PROFILE PIC ===== */
 .hero-image { position: relative; z-index: 1; flex-shrink: 0; }
 .profile-wrap { position: relative; width: 300px; height: 300px; display: flex; align-items: center; justify-content: center; }
