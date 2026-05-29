@@ -1,178 +1,133 @@
-# Amandi's Portfolio
-🌐 Live Site: https://Amandi1020.github.io/Amandi-Portfolio/
+# 🌹 Amandi Rajapaksha — Personal Portfolio
 
-# Personal Portfolio Website
-
-A modern, responsive, and interactive personal portfolio website built using **HTML, CSS, and JavaScript** to showcase projects, technical skills, certifications, and professional experience.
-
-This portfolio is designed with a sleek dark-themed UI, smooth animations, interactive effects, and a fully responsive layout to provide an engaging user experience across all devices.
+[![Live Site](https://img.shields.io/badge/🌐_Live_Site-Visit_Portfolio-B76E79?style=for-the-badge)](https://amandi1020.github.io/Amandi-Portfolio/)
+[![GitHub](https://img.shields.io/badge/GitHub-Amandi1020-181717?style=for-the-badge&logo=github)](https://github.com/Amandi1020)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Amandi_Rajapaksha-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/amandi-rajapaksha-397a21284/)
 
 ---
 
-## Features
+## 👩‍💻 About This Project
 
-### Responsive Design
-- Fully optimized for desktop, tablet, and mobile devices
-- Adaptive navigation menu with hamburger support
-
-### Interactive Navigation
-- Sticky navbar with scroll effect
-- Active section highlighting while scrolling
-- Smooth scrolling between sections
-
-### Animated UI Elements
-- Scroll reveal animations
-- Animated skill progress bars
-- Counter animations
-- Floating particle background
-- Cursor glow effect
-
-### Portfolio Sections
-- Hero / Introduction
-- About Me
-- Skills
-- Projects Showcase
-- Certifications
-- Experience / Timeline
-- Contact Section
-
-### Contact Form
-- Async form submission
-- Loading state animation
-- Success/Error feedback handling
+This is my **personal portfolio website** — designed and built from scratch using HTML, CSS and JavaScript. It showcases my skills, projects, education, certifications and experience as a 2nd year **Management Information Systems** undergraduate at **NSBM Green University**, Sri Lanka.
 
 ---
 
-## Technologies Used
+## ✨ Features
 
-- **HTML5**
-- **CSS3**
-- **JavaScript (Vanilla JS)**
-- **Intersection Observer API**
-- **Fetch API**
+- 🌹 **Rose Gold dark theme** — elegant and professional design
+- ✨ **Particle background animation** — floating particles in the hero section
+- 🔄 **Spinning profile ring** — animated conic gradient border
+- 📊 **Animated skill bars** — triggered on scroll with IntersectionObserver
+- 🔢 **Counter animation** — stats count up when visible
+- 🎯 **Scroll reveal** — sections fade in as you scroll
+- 📱 **Fully responsive** — mobile, tablet and desktop layouts
+- 💌 **Contact form** — powered by Formspree
+- 🖱️ **Cursor glow effect** — subtle rose gold glow follows the mouse
+- 🍔 **Mobile hamburger menu** — smooth navigation on all devices
 
 ---
 
-## Project Structure
+## 🛠️ Built With
 
-```bash
-portfolio-website/
+| Technology | Purpose |
+|-----------|---------|
+| HTML5 | Page structure and content |
+| CSS3 | Styling, animations, responsive layout |
+| JavaScript (Vanilla) | Interactions, scroll effects, particles |
+| Playfair Display | Heading font (Google Fonts) |
+| Inter | Body font (Google Fonts) |
+| Font Awesome 6 | Icons |
+| Formspree | Contact form backend |
+| GitHub Pages | Free hosting |
+
+---
+
+## 📁 Project Structure
+
+```
+Amandi-Portfolio/
 │
-├── index.html
-├── style.css
-├── script.js
-└── assets/
+├── index.html              ← Main HTML file
+├── css/
+│   └── style.css           ← All styles and animations
+├── js/
+│   └── main.js             ← JavaScript interactions
+├── assets/
+│   ├── img/
+│   │   ├── profile.jpg     ← Profile photo
+│   │   ├── MIS.jpg         ← Saylor Academy certificate
+│   │   ├── DITEC.jpeg      ← Pearson DITEC certificate
+│   │   ├── IBM PM.jpg      ← IBM SkillsBuild certificate
+│   │   ├── Project Management.jpg  ← Simplilearn certificate
+│   │   └── UI UX.jpg       ← Simplilearn UI/UX certificate
+│   └── resume.pdf          ← Downloadable CV
+└── README.md
 ```
 
 ---
 
-## JavaScript Functionalities
+## 🚀 Getting Started
 
-### Navbar Scroll Effect
-Changes navbar appearance when scrolling.
+### View Live
+👉 [https://amandi1020.github.io/Amandi-Portfolio/](https://amandi1020.github.io/Amandi-Portfolio/)
 
-### Mobile Menu Toggle
-Responsive hamburger menu for smaller screens.
-
-### Scroll Reveal Animation
-Elements animate into view using the Intersection Observer API.
-
-### Skill Bar Animation
-Skill progress bars animate when visible.
-
-### Counter Animation
-Statistics count up dynamically.
-
-### Particle Animation
-Generates animated floating particles.
-
-### Active Section Detection
-Highlights current section in navigation.
-
-### Smooth Scrolling
-Provides seamless navigation between sections.
-
-### Contact Form Handling
-Processes form submission asynchronously.
-
-### Cursor Glow Effect
-Interactive mouse-follow glow animation.
-
----
-
-## Installation & Usage
-
-### Clone the Repository
-
+### Run Locally
 ```bash
-git clone https://github.com/Amandi1020/Amandi-Portfolio
+# Clone the repository
+git clone https://github.com/Amandi1020/Amandi-Portfolio.git
+
+# Open in VS Code
+code Amandi-Portfolio
+
+# Right-click index.html → Open with Live Server
 ```
-
-### Navigate to Project Folder
-
-```bash
-cd Amandi-Portfolio
-```
-
-### Open in Browser
-
-Simply open:
-
-```bash
-index.html
-```
+No installations or dependencies needed — pure HTML, CSS and JavaScript.
 
 ---
 
-## Customization
+## 📌 Sections
 
-You can easily personalize this portfolio by updating:
-
-- Personal information
-- Profile image
-- Projects section
-- Skills and proficiency levels
-- Contact details
-- Social media links
-- Color theme variables in CSS
-
----
-
-## Future Improvements
-
-- Dark/Light theme toggle
-- Blog section
-- Project filtering
-- Backend integration for contact form
-- Performance optimization
+| Section | Description |
+|---------|-------------|
+| 🏠 Hero | Introduction with animated profile and social links |
+| 👩 About | Personal info, stats and quick info cards |
+| 🛠️ Skills | Technical and business skill bars + tools grid |
+| 📁 Projects | 6 real projects with GitHub links (group & individual) |
+| 🎓 Education | BSc MIS · CA · AAT · DITEC · A/L timeline |
+| 🏆 Certifications | 5 certificates with image previews |
+| 💼 Experience | IEEE · Bank of Ceylon · Organizing Committee · GitHub |
+| 📬 Contact | Contact form + social links |
 
 ---
 
-## Learning Outcomes
+## 🎓 About Me
 
-This project demonstrates:
-
-- DOM manipulation
-- Event handling
-- Responsive web design
-- Animation techniques
-- API integration
-- Modern UI/UX principles
+- 📍 Sri Lanka
+- 🏫 NSBM Green University — BSc Management Information Systems (2nd Year)
+- 💡 Passionate about Front-End Development, IT Solutions and Project Management
+- 🔍 Seeking internship opportunities in IT / Front-End Development / Project Management
+- 📧 amandirajapaksha2003@gmail.com
 
 ---
 
-## Author
+## 📬 Contact
 
-**Amandi Rajapaksha**
-
-Undergraduate student passionate about:
-- Web Development
-- Project Management
-- UI/UX Design
-- Building interactive digital experiences
+| Platform | Link |
+|----------|------|
+| 📧 Email | [amandirajapaksha2003@gmail.com](mailto:amandirajapaksha2003@gmail.com) |
+| 💼 LinkedIn | [linkedin.com/in/amandi-rajapaksha-397a21284](https://www.linkedin.com/in/amandi-rajapaksha-397a21284/) |
+| 🐙 GitHub | [github.com/Amandi1020](https://github.com/Amandi1020) |
+| 📸 Instagram | [@amandiiii_03](https://www.instagram.com/amandiiii_03/) |
 
 ---
 
-## License
+## 📄 License
 
-This project is open source and available under the **MIT License**.
+This project is open source and available under the [MIT License](LICENSE).
+
+Feel free to use this as inspiration for your own portfolio — but please give credit! 🙏
+
+---
+
+<p align="center">Designed & Built with 🌹 by <strong>Amandi Rajapaksha</strong> · 2026</p>
+<p align="center">MIS Undergraduate · NSBM Green University · Sri Lanka</p>
