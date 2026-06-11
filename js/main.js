@@ -85,6 +85,25 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 });
 
 // ===== CONTACT FORM =====
+// Toast helper
+function showToast(message, type = 'success') {
+  let toast = document.getElementById('form-toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'form-toast';
+    toast.className = 'form-toast';
+    document.body.appendChild(toast);
+  }
+  toast.textContent = message;
+  toast.className = `form-toast ${type}`;
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => toast.classList.add('show'));
+  });
+  setTimeout(() => {
+    toast.classList.remove('show');
+  }, 3500);
+}
+
 const form = document.querySelector('.contact-form');
 if (form) {
   form.addEventListener('submit', async (e) => {
@@ -102,11 +121,21 @@ if (form) {
         btn.innerHTML = 'Message Sent ✓';
         btn.style.background = 'linear-gradient(135deg,#2d7a5e,#3aaa80)';
         form.reset();
-        setTimeout(() => { btn.innerHTML = original; btn.style.background = ''; btn.disabled = false; }, 3000);
+        showToast('✅ Message sent! I\'ll get back to you soon.', 'success');
+        setTimeout(() => {
+          btn.innerHTML = original;
+          btn.style.background = '';
+          btn.disabled = false;
+        }, 3000);
       } else throw new Error();
     } catch {
-      btn.innerHTML = 'Error — email me directly';
-      setTimeout(() => { btn.innerHTML = original; btn.style.background = ''; btn.disabled = false; }, 3000);
+      btn.innerHTML = 'Error — try again';
+      showToast('❌ Something went wrong. Please try again.', 'error');
+      setTimeout(() => {
+        btn.innerHTML = original;
+        btn.style.background = '';
+        btn.disabled = false;
+      }, 3000);
     }
   });
 }
