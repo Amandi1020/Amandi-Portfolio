@@ -332,6 +332,71 @@ a { text-decoration: none; color: inherit; }
 .contact-form input::placeholder, .contact-form textarea::placeholder { color: var(--text-muted); }
 .contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: var(--rose); box-shadow: 0 0 0 3px rgba(183,110,121,0.12); }
 
+.contact-form button[type="submit"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  background: linear-gradient(135deg, var(--rose), var(--rose-deep));
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(183,110,121,0.4);
+  transition: transform 0.25s, box-shadow 0.25s, background 0.3s;
+  align-self: flex-start;
+}
+
+.contact-form button[type="submit"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 32px rgba(183,110,121,0.6);
+}
+
+.contact-form button[type="submit"]:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Success/Error toast popup */
+.form-toast {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  padding: 0.85rem 1.8rem;
+  border-radius: 50px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #fff;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 9999;
+  white-space: nowrap;
+}
+
+.form-toast.success {
+  background: linear-gradient(135deg, #2d7a5e, #3aaa80);
+  box-shadow: 0 8px 24px rgba(58,170,128,0.4);
+}
+
+.form-toast.error {
+  background: linear-gradient(135deg, #9b3a4a, #c0566a);
+  box-shadow: 0 8px 24px rgba(183,110,121,0.4);
+}
+
+.form-toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
 /* ===== FOOTER ===== */
 .footer { text-align: center; padding: 3rem 5%; border-top: 1px solid var(--border); background: var(--dark); }
 .footer-socials { display: flex; justify-content: center; gap: 1rem; margin-bottom: 1.2rem; }
