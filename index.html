@@ -479,32 +479,43 @@
   </section>
 
   <!-- CONTACT -->
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Get In Touch</span>
-        <h2>Contact Me</h2>
-        <div class="header-line"></div>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-info reveal">
-          <p>I'm open to internship opportunities, collaborations and interesting conversations. Feel free to reach out — I'd love to connect!</p>
-          <div class="contact-links">
-            <a href="mailto:amandirajapaksha2003@gmail.com"><i class="fas fa-envelope"></i> amandirajapaksha2003@gmail.com</a>
-            <a href="https://github.com/Amandi1020" target="_blank"><i class="fab fa-github"></i> github.com/Amandi1020</a>
-            <a href="https://www.linkedin.com/in/amandi-rajapaksha-397a21284/" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/amandi-rajapaksha</a>
-            <a href="https://www.instagram.com/amandiiii_03/" target="_blank"><i class="fab fa-instagram"></i> @amandiiii_03</a>
-          </div>
-        </div>
-        <form action="https://formsubmit.co/amandirajapaksha2003@gmail.com" method="POST">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea name="message" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Get In Touch</span>
+      <h2>Contact Me</h2>
+      <div class="header-line"></div>
     </div>
-  </section>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p>I'm open to internship opportunities, collaborations and interesting conversations. Feel free to reach out — I'd love to connect!</p>
+        <div class="contact-links">
+          <a href="mailto:amandirajapaksha2003@gmail.com"><i class="fas fa-envelope"></i> amandirajapaksha2003@gmail.com</a>
+          <a href="https://github.com/Amandi1020" target="_blank"><i class="fab fa-github"></i> github.com/Amandi1020</a>
+          <a href="https://www.linkedin.com/in/amandi-rajapaksha-397a21284/" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/amandi-rajapaksha</a>
+          <a href="https://www.instagram.com/amandiiii_03/" target="_blank"><i class="fab fa-instagram"></i> @amandiiii_03</a>
+        </div>
+      </div>
+
+      <form
+        class="contact-form"
+        action="https://formsubmit.co/ajax/amandirajapaksha2003@gmail.com"
+        method="POST"
+      >
+        <!-- FormSubmit config -->
+        <input type="hidden" name="_subject" value="New message from Portfolio!">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none">
+
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+    </div>
+  </div>
+</section>
 
   <!-- FOOTER -->
   <footer class="footer">
