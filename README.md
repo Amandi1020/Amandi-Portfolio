@@ -1,135 +1,140 @@
-# 🌹 Amandi Rajapaksha — Personal Portfolio
+# Amandi Rajapaksha — Personal Portfolio
 
-[![Live Site](https://img.shields.io/badge/🌐_Live_Site-Visit_Portfolio-B76E79?style=for-the-badge)](https://amandi1020.github.io/Amandi-Portfolio/)
+[![Live Site](https://img.shields.io/badge/Live_Site-Visit_Portfolio-B76E79?style=for-the-badge)](https://amandi1020.github.io/Amandi-Portfolio/)
 [![GitHub](https://img.shields.io/badge/GitHub-Amandi1020-181717?style=for-the-badge&logo=github)](https://github.com/Amandi1020)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Amandi_Rajapaksha-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/amandi-rajapaksha-397a21284/)
 
 ---
 
-## 👩‍💻 About This Project
+## About This Project
 
-This is my **personal portfolio website** — designed and built from scratch using HTML, CSS and JavaScript. It showcases my skills, projects, education, certifications and experience as a 2nd year **Management Information Systems** undergraduate at **NSBM Green University**, Sri Lanka.
-
----
-
-## ✨ Features
-
-- 🌹 **Rose Gold dark theme** — elegant and professional design
-- ✨ **Particle background animation** — floating particles in the hero section
-- 🔄 **Spinning profile ring** — animated conic gradient border
-- 📊 **Animated skill bars** — triggered on scroll with IntersectionObserver
-- 🔢 **Counter animation** — stats count up when visible
-- 🎯 **Scroll reveal** — sections fade in as you scroll
-- 📱 **Fully responsive** — mobile, tablet and desktop layouts
-- 💌 **Contact form** — powered by Formspree
-- 🖱️ **Cursor glow effect** — subtle rose gold glow follows the mouse
-- 🍔 **Mobile hamburger menu** — smooth navigation on all devices
+A personal portfolio built from scratch with HTML, CSS and vanilla JavaScript. It presents my work, skills, projects, education, certifications and experience as a third-year **Management Information Systems** undergraduate at **NSBM Green University**, Sri Lanka, seeking **Project Management and Business Analysis** internships.
 
 ---
 
-## 🛠️ Built With
+## Features
+
+- Refined rose-gold dark theme with Playfair Display and Inter
+- Responsive layout for mobile, tablet and desktop
+- Accessible navigation with skip link, focus states and ARIA attributes
+- Project filters for All, Web, Group and Individual work
+- Animated stats, scroll reveal, reading progress and back-to-top controls
+- Mobile hamburger navigation with keyboard support
+- Contact form via FormSubmit
+- SEO metadata, Open Graph tags, favicon and social preview image
+- Reduced-motion support for users who prefer less animation
+
+---
+
+## Built With
 
 | Technology | Purpose |
 |-----------|---------|
 | HTML5 | Page structure and content |
-| CSS3 | Styling, animations, responsive layout |
-| JavaScript (Vanilla) | Interactions, scroll effects, particles |
+| CSS3 | Styling, responsive layout and motion |
+| JavaScript (Vanilla) | Navigation, scroll effects and form feedback |
 | Playfair Display | Heading font (Google Fonts) |
 | Inter | Body font (Google Fonts) |
 | Font Awesome 6 | Icons |
-| Formspree | Contact form backend |
-| GitHub Pages | Free hosting |
+| FormSubmit | Contact form backend |
+| GitHub Pages | Hosting |
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Amandi-Portfolio/
 │
-├── index.html              ← Main HTML file
+├── index.html              Main HTML file
 ├── css/
-│   └── style.css           ← All styles and animations
+│   └── style.css           Styles and responsive layout
 ├── js/
-│   └── main.js             ← JavaScript interactions
+│   └── main.js             Navigation, scroll and form interactions
 ├── assets/
 │   ├── img/
-│   │   ├── MIS.jpg                     ← Saylor Academy certificate
-│   │   ├── DITEC.jpeg                  ← Pearson DITEC certificate
-│   │   ├── IBM-PM.jpg                  ← IBM SkillsBuild certificate
-│   │   ├── Project-Management.jpg      ← Simplilearn certificate
-│   │   ├── UI-UX.jpg                   ← Simplilearn UI/UX certificate
-│   │   ├── Agile-Project-Management.jpg ← HP LIFE certificate
-│   │   ├── pawfind.png                 ← PawFind project image (currently unused)
-│   │   └── profile.jpg                 ← Profile photo (not in repo yet; hero falls back to GitHub avatar)
-│   └── resume.pdf          ← Downloadable CV
+│   │   ├── MIS.jpg                     Saylor Academy certificate
+│   │   ├── DITEC.jpeg                  Pearson DITEC certificate
+│   │   ├── IBM-PM.jpg                  IBM SkillsBuild certificate
+│   │   ├── Project-Management.jpg      Simplilearn certificate
+│   │   ├── UI-UX.jpg                   Simplilearn UI/UX certificate
+│   │   ├── Agile-Project-Management.jpg HP LIFE certificate
+│   │   ├── favicon.svg                 Site favicon
+│   │   ├── og-image.svg                Social preview source
+│   │   ├── og-image.png                Social preview image
+│   │   ├── pawfind.png                 PawFind project image (unused)
+│   │   └── profile.jpg                 Profile image (GitHub avatar copy)
+│   └── resume.pdf          Downloadable CV
+├── CONTENT_ALIGNMENT.md    Content gaps and evidence checklist
+├── REDESIGN_NOTES.md       Design concept, changes and owner TODOs
+├── PORTFOLIO_AUDIT.md      PM/BA portfolio audit
 └── README.md
 ```
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### View Live
-👉 [https://amandi1020.github.io/Amandi-Portfolio/](https://amandi1020.github.io/Amandi-Portfolio/)
+
+[https://amandi1020.github.io/Amandi-Portfolio/](https://amandi1020.github.io/Amandi-Portfolio/)
 
 ### Run Locally
+
 ```bash
-# Clone the repository
 git clone https://github.com/Amandi1020/Amandi-Portfolio.git
-
-# Open in VS Code
-code Amandi-Portfolio
-
-# Right-click index.html → Open with Live Server
+cd Amandi-Portfolio
+python -m http.server 8000
 ```
-No installations or dependencies needed — pure HTML, CSS and JavaScript.
+
+Open `http://localhost:8000` in a browser. No build step or package install is required.
 
 ---
 
-## 📌 Sections
+## Sections
 
 | Section | Description |
 |---------|-------------|
-| 🏠 Hero | Introduction with animated profile and social links |
-| 👩 About | Personal info, stats and quick info cards |
-| 🛠️ Skills | Technical and business skill bars + tools grid |
-| 📁 Projects | 6 real projects with GitHub links (group & individual) |
-| 🎓 Education | BSc MIS · CA · AAT · DITEC · A/L · O/L timeline |
-| 🏆 Certifications | 6 certificates with image previews |
-| 💼 Experience | IEEE · Bank of Ceylon · Organizing Committee · GitHub |
-| 📬 Contact | Contact form + social links |
+| Hero | Introduction, availability status, CV download and social links |
+| About | Background, stats, quick facts and working approach |
+| Experience | IEEE, Harithawarjana, Linkup, Bank of Ceylon and GitHub experience |
+| Projects | 7 projects with GitHub links, EcoTrack featured |
+| Skills | Project management, business analysis, data, collaboration and development |
+| Certifications | 6 certificates with image previews |
+| Education | BSc MIS, CA, AAT, Pearson DITEC, A/L and O/L |
+| Contact | Contact form and social links |
 
 ---
 
-## 🎓 About Me
+## About Me
 
-- 📍 Sri Lanka
-- 🏫 NSBM Green University — BSc Management Information Systems (2nd Year)
-- 💡 Passionate about Front-End Development, IT Solutions and Project Management
-- 🔍 Seeking internship opportunities in IT / Front-End Development / Project Management
-- 📧 amandirajapaksha2003@gmail.com
+- Sri Lanka
+- NSBM Green University — BSc Management Information Systems (third year)
+- CA Corporate Level; AAT Passed Finalist; Pearson DITEC certified
+- Focused on Project Management, Business Analysis and finance-informed decision making
+- Seeking internships in Project Management or Business Analysis
+- amandirajapaksha2003@gmail.com
 
 ---
 
-## 📬 Contact
+## Contact
 
 | Platform | Link |
 |----------|------|
-| 📧 Email | [amandirajapaksha2003@gmail.com](mailto:amandirajapaksha2003@gmail.com) |
-| 💼 LinkedIn | [linkedin.com/in/amandi-rajapaksha-397a21284](https://www.linkedin.com/in/amandi-rajapaksha-397a21284/) |
-| 🐙 GitHub | [github.com/Amandi1020](https://github.com/Amandi1020) |
-| 📸 Instagram | [@amandiiii_03](https://www.instagram.com/amandiiii_03/) |
+| Email | [amandirajapaksha2003@gmail.com](mailto:amandirajapaksha2003@gmail.com) |
+| LinkedIn | [linkedin.com/in/amandi-rajapaksha-397a21284](https://www.linkedin.com/in/amandi-rajapaksha-397a21284/) |
+| GitHub | [github.com/Amandi1020](https://github.com/Amandi1020) |
+| Instagram | [@amandiiii_03](https://www.instagram.com/amandiiii_03/) |
 
 ---
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-Feel free to use this as inspiration for your own portfolio — but please give credit! 🙏
+Feel free to use it as inspiration for your own portfolio, with credit.
 
 ---
 
-<p align="center">Designed & Built with 🌹 by <strong>Amandi Rajapaksha</strong> · 2026</p>
+<p align="center">Designed and built by <strong>Amandi Rajapaksha</strong> · 2026</p>
 <p align="center">MIS Undergraduate · NSBM Green University · Sri Lanka</p>
