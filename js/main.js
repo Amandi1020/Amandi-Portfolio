@@ -91,32 +91,105 @@ if (prefersReducedMotion || !('IntersectionObserver' in window)) {
 }
 
 // ===== PROJECT FILTERS =====
-const filterButtons = document.querySelectorAll('.filter-btn');
-const projectCards = document.querySelectorAll('.project-card');
-const realProjectCards = Array.from(projectCards).filter(card => card.dataset.placeholder !== 'true');
+const filterButtons = Array.from(document.querySelectorAll('.filter-btn'));
+const projectCards = Array.from(document.querySelectorAll('.project-card'));
+const realProjectCards = projectCards.filter(card => card.dataset.placeholder !== 'true');
 
-['mobile', 'business-analysis'].forEach(filter => {
-  const button = Array.from(filterButtons).find(item => item.dataset.filter === filter);
+['web', 'mobile', 'business-analysis', 'group', 'individual'].forEach(filter => {
+  const button = filterButtons.find(item => item.dataset.filter === filter);
   if (!button) return;
   const hasRealProject = realProjectCards.some(card => (card.dataset.category || '').split(/\s+/).includes(filter));
   button.hidden = !hasRealProject;
 });
 
+function applyProjectFilter(filter, activeButton) {
+  filterButtons.forEach(button => {
+    const selected = button === activeButton;
+    button.classList.toggle('active', selected);
+    button.setAttribute('aria-selected', String(selected));
+    button.setAttribute('aria-pressed', String(selected));
+  });
+
+  projectCards.forEach(card => {
+    const categories = (card.dataset.category || '').split(/\s+/);
+    const isPlaceholder = card.dataset.placeholder === 'true';
+    const show = filter === 'all' || (!isPlaceholder && categories.includes(filter));
+    card.hidden = !show;
+
+    if (show) {
+      card.classList.remove('filter-pop');
+      void card.offsetWidth;
+      if (!prefersReducedMotion) card.classList.add('filter-pop');
+    }
+  });
+}
+
 filterButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const filter = button.dataset.filter;
-    filterButtons.forEach(item => {
-      const selected = item === button;
-      item.classList.toggle('active', selected);
-      item.setAttribute('aria-pressed', String(selected));
-    });
-    projectCards.forEach(card => {
-      const categories = (card.dataset.category || '').split(/\s+/);
-      const isPlaceholder = card.dataset.placeholder === 'true';
-      card.hidden = filter !== 'all' && (isPlaceholder || !categories.includes(filter));
-    });
+  button.addEventListener('click', () => applyProjectFilter(button.dataset.filter, button));
+  button.addEventListener('keydown', event => {
+    if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+    const visibleButtons = filterButtons.filter(item => !item.hidden);
+    const currentIndex = visibleButtons.indexOf(button);
+    if (currentIndex === -1) return;
+    event.preventDefault();
+    const nextIndex = event.key === 'Home'
+      ? 0
+      : event.key === 'End'
+        ? visibleButtons.length - 1
+        : (currentIndex + (event.key === 'ArrowRight' ? 1 : -1) + visibleButtons.length) % visibleButtons.length;
+    visibleButtons[nextIndex].focus();
+    visibleButtons[nextIndex].click();
   });
 });
+
+projectCards.forEach(card => {
+  card.addEventListener('animationend', event => {
+    if (event.animationName === 'projectPop') card.classList.remove('filter-pop');
+  });
+});
+
+// ===== PROJECT DETAILS =====
+const projectDialog = document.getElementById('projectDialog');
+if (projectDialog) {
+  const dialogTypes = document.getElementById('projectDialogTypes');
+  const dialogTitle = document.getElementById('projectDialogTitle');
+  const dialogDesc = document.getElementById('projectDialogDesc');
+  const dialogTags = document.getElementById('projectDialogTags');
+  const dialogMeta = document.getElementById('projectDialogMeta');
+  const dialogLinks = document.getElementById('projectDialogLinks');
+  const closeButton = projectDialog.querySelector('.project-dialog-close');
+
+  document.querySelectorAll('.project-details-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const card = button.closest('.project-card');
+      if (!card) return;
+
+      const fullDescription = card.querySelector('.project-full-desc');
+      const shortDescription = card.querySelector('.project-desc');
+      const meta = card.querySelector('.project-meta');
+
+      dialogTypes.replaceChildren(...Array.from(card.querySelectorAll('.project-type'), item => item.cloneNode(true)));
+      dialogTitle.textContent = card.querySelector('h3')?.textContent.trim() || '';
+      dialogDesc.textContent = (fullDescription || shortDescription)?.textContent.trim() || '';
+      dialogTags.replaceChildren(...Array.from(card.querySelectorAll('.project-tags span'), item => item.cloneNode(true)));
+      dialogMeta.textContent = meta?.textContent.trim() || '';
+      dialogMeta.hidden = !dialogMeta.textContent;
+      dialogLinks.replaceChildren(...Array.from(card.querySelectorAll('.project-links > *'), item => item.cloneNode(true)));
+
+      projectDialog.showModal();
+      document.body.classList.add('dialog-open');
+      closeButton?.focus();
+    });
+  });
+
+  if (closeButton) closeButton.addEventListener('click', () => projectDialog.close());
+
+  projectDialog.addEventListener('click', event => {
+    if (event.target === projectDialog) projectDialog.close();
+  });
+
+  projectDialog.addEventListener('close', () => document.body.classList.remove('dialog-open'));
+}
 
 // ===== STAT COUNTERS =====
 const statNumbers = document.querySelectorAll('.stat-num');
