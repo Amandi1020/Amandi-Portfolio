@@ -93,6 +93,14 @@ if (prefersReducedMotion || !('IntersectionObserver' in window)) {
 // ===== PROJECT FILTERS =====
 const filterButtons = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('.project-card');
+const realProjectCards = Array.from(projectCards).filter(card => card.dataset.placeholder !== 'true');
+
+['mobile', 'business-analysis'].forEach(filter => {
+  const button = Array.from(filterButtons).find(item => item.dataset.filter === filter);
+  if (!button) return;
+  const hasRealProject = realProjectCards.some(card => (card.dataset.category || '').split(/\s+/).includes(filter));
+  button.hidden = !hasRealProject;
+});
 
 filterButtons.forEach(button => {
   button.addEventListener('click', () => {
@@ -104,7 +112,8 @@ filterButtons.forEach(button => {
     });
     projectCards.forEach(card => {
       const categories = (card.dataset.category || '').split(/\s+/);
-      card.hidden = filter !== 'all' && !categories.includes(filter);
+      const isPlaceholder = card.dataset.placeholder === 'true';
+      card.hidden = filter !== 'all' && (isPlaceholder || !categories.includes(filter));
     });
   });
 });
