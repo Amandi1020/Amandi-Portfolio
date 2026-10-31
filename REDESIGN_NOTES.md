@@ -1,5 +1,7 @@
 # Redesign Notes
 
+> Status: prompt #3 snapshot. Prompt #4 superseded the project layout, section order, About copy and achievements details. See `CHANGES.md` and `TODO_OWNER.md` for the current state.
+
 ## Concept
 
 The portfolio uses a corporate-editorial direction: large serif headlines, a clean sans-serif body, generous whitespace and a restrained champagne-and-rose accent on a warm near-black base. The goal is to read as a serious PM/BA candidate rather than a generic developer portfolio, while keeping the site lightweight and dependency-free.
