@@ -3,68 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Amandi Rajapaksha | MIS Portfolio</title>
+  <title>Amandi Rajapaksha — Aspiring Project Manager &amp; Business Analyst</title>
+  <meta name="description" content="Portfolio of Amandi Rajapaksha, a third-year Management Information Systems undergraduate at NSBM Green University, seeking Project Management and Business Analysis internships in Sri Lanka." />
+  <meta name="author" content="Amandi Rajapaksha" />
+  <meta name="theme-color" content="#0B090A" />
+  <link rel="canonical" href="https://amandi1020.github.io/Amandi-Portfolio/" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Amandi Rajapaksha — Aspiring Project Manager &amp; Business Analyst" />
+  <meta property="og:description" content="Third-year MIS undergraduate at NSBM Green University seeking Project Management and Business Analysis internships." />
+  <meta property="og:url" content="https://amandi1020.github.io/Amandi-Portfolio/" />
+  <meta property="og:image" content="https://amandi1020.github.io/Amandi-Portfolio/assets/img/og-image.png" />
+  <meta property="og:image:alt" content="Amandi Rajapaksha — Project Management and Business Analysis portfolio" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Amandi Rajapaksha — Aspiring Project Manager &amp; Business Analyst" />
+  <meta name="twitter:description" content="Third-year MIS undergraduate at NSBM Green University seeking Project Management and Business Analysis internships." />
+  <meta name="twitter:image" content="https://amandi1020.github.io/Amandi-Portfolio/assets/img/og-image.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
 
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
   <!-- NAV -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-logo">AR<span>.</span></div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="hamburger" id="hamburger">
+  <header class="navbar" id="navbar">
+    <a class="nav-logo" href="#home" aria-label="Amandi Rajapaksha home">AR<span>.</span></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="primary-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" type="button" aria-label="Open navigation" aria-controls="primary-nav" aria-expanded="false">
       <span></span><span></span><span></span>
-    </div>
-  </nav>
+    </button>
+  </header>
+
+  <main id="main">
 
   <!-- HERO -->
   <section class="hero" id="home">
-    <div class="hero-bg">
-      <div class="blob blob1"></div>
-      <div class="blob blob2"></div>
-      <div class="blob blob3"></div>
-      <div class="particles" id="particles"></div>
-    </div>
+    <div class="hero-bg" aria-hidden="true"></div>
     <div class="hero-content">
       <p class="hero-tag fade-in">MIS Undergraduate · NSBM Green University</p>
-      <h1 class="hero-title fade-in delay-1">Hi, I'm<br><span>Amandi</span><br><em>Rajapaksha</em></h1>
-      <p class="hero-sub fade-in delay-2">Aspiring <strong>Project Manager</strong> & <strong>Business Analyst</strong> — bridging technology and business to turn requirements into solutions that work.</p>
+      <div class="hero-status fade-in">
+        <span class="status-dot" aria-hidden="true"></span>
+        Open to Internships — Project Management / Business Analysis
+      </div>
+      <h1 class="hero-title fade-in delay-1"><span class="hero-greeting">Hi, I'm</span> <span class="hero-name">Amandi</span> <em>Rajapaksha</em></h1>
+      <p class="hero-sub fade-in delay-2">Aspiring <strong>Project Manager</strong> &amp; <strong>Business Analyst</strong> — bridging technology and business to turn requirements into solutions that work.</p>
 
       <div class="hero-pills fade-in delay-2">
         <span class="hero-pill">Project Management</span>
-        <span class="hero-pill">Front-End Development</span>
-        <span class="hero-pill">UI / UX Design</span>
-        <span class="hero-pill">MIS & Business Analysis</span>
+        <span class="hero-pill">Business Analysis</span>
+        <span class="hero-pill">Requirements &amp; Process Modelling</span>
+        <span class="hero-pill">Finance &amp; Budgeting</span>
+        <span class="hero-pill hero-pill-muted">Front-End Development</span>
+        <span class="hero-pill hero-pill-muted">UI / UX Design</span>
       </div>
 
       <div class="hero-btns fade-in delay-3">
-        <a href="#projects" class="btn btn-primary">View My Work</a>
-        <a href="assets/resume.pdf" class="btn btn-outline" download>Download CV <i class="fas fa-download"></i></a>
+        <a href="assets/resume.pdf" class="btn btn-primary" download>Download CV <i class="fas fa-download" aria-hidden="true"></i></a>
+        <a href="#projects" class="btn btn-outline">View My Work</a>
       </div>
       <div class="hero-socials fade-in delay-4">
-        <a href="https://github.com/Amandi1020" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/amandi-rajapaksha-397a21284/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:amandirajapaksha2003@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.instagram.com/amandiiii_03/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/Amandi1020" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="fab fa-github" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/amandi-rajapaksha-397a21284/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+        <a href="mailto:amandirajapaksha2003@gmail.com" aria-label="Send email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/amandiiii_03/" target="_blank" rel="noopener" aria-label="Instagram profile"><i class="fab fa-instagram" aria-hidden="true"></i></a>
       </div>
     </div>
     <div class="hero-image fade-in delay-2">
       <div class="profile-wrap">
-        <div class="profile-outer-ring"></div>
+        <div class="profile-outer-ring" aria-hidden="true"></div>
         <div class="profile-inner">
+          <!-- TODO(owner): replace this GitHub avatar copy with a preferred professional photo. -->
           <img
             src="assets/img/profile.jpg"
             alt="Amandi Rajapaksha"
+            width="280"
+            height="280"
+            decoding="async"
             onerror="this.onerror=null;this.src='https://avatars.githubusercontent.com/u/211143959?v=4'"
           />
         </div>
@@ -76,155 +107,127 @@
   <section class="section" id="about">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Who I Am</span>
+        <span class="section-tag">01 / Who I Am</span>
         <h2>About Me</h2>
         <div class="header-line"></div>
       </div>
       <div class="about-grid">
         <div class="about-text reveal">
-          <p>I'm <strong>Amandi Rajapaksha</strong>, a 3rd year <strong>Management Information Systems</strong> undergraduate at NSBM Green University, focused on Project Management and Business Analysis with a strong grounding in finance (CA & AAT) and full-stack development.</p>
-          <p>I sit at the intersection of business and technology — translating business needs into clear requirements, structured plans, and working systems. My coursework in IT Project Management, Systems Analysis & Design, and hands-on full-stack projects lets me speak both the business language and the technical one.</p>
-          <p>I'm seeking an internship in Project Management or Business Analysis where I can apply this combination to real-world challenges.</p>
+          <p>I'm <strong>Amandi Rajapaksha</strong>, a third-year <strong>Management Information Systems</strong> undergraduate at NSBM Green University, building a career in <strong>Project Management and Business Analysis</strong>. My finance grounding — <strong>CA Corporate Level and AAT</strong> — helps me think in budgets, risk and value, while my IT background lets me turn business needs into clear requirements, structured plans and working solutions.</p>
+          <p>I've led the finance team as <strong>Organizing Committee Vice President</strong> for the <strong>"Harithawarjana"</strong> event and serve on the IEEE Standards Committee's finance team. I'm now looking for an internship where I can support real projects, learn from experienced teams and contribute from day one.</p>
           <div class="about-stats">
-            <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label">Year</span></div>
-            <div class="stat"><span class="stat-num" data-count="6">0</span><span class="stat-label">Projects</span></div>
-            <div class="stat"><span class="stat-num" data-count="6">0</span><span class="stat-label">Certs</span></div>
+            <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label">Leadership Roles</span></div>
+            <div class="stat"><span class="stat-num" data-count="7">0</span><span class="stat-label">Projects</span></div>
+            <div class="stat"><span class="stat-num" data-count="6">0</span><span class="stat-label">Certificates</span></div>
           </div>
         </div>
         <div class="about-cards reveal delay-1">
-          <div class="info-card"><i class="fas fa-graduation-cap"></i><div><strong>Degree</strong><p>BSc in Management Information Systems</p></div></div>
-          <div class="info-card"><i class="fas fa-university"></i><div><strong>University</strong><p>NSBM Green University</p></div></div>
-          <div class="info-card"><i class="fas fa-map-marker-alt"></i><div><strong>Location</strong><p>Sri Lanka</p></div></div>
-          <div class="info-card"><i class="fas fa-briefcase"></i><div><strong>Looking For</strong><p>Internship — IT / Front-End Development | Project Management</p></div></div>
-          <div class="info-card"><i class="fas fa-envelope"></i><div><strong>Email</strong><p>amandirajapaksha2003@gmail.com</p></div></div>
-          <div class="info-card"><i class="fas fa-language"></i><div><strong>Languages</strong><p>Sinhala (Native) · English (Intermediate)</p></div></div>
+          <div class="info-card"><i class="fas fa-graduation-cap" aria-hidden="true"></i><div><strong>Degree</strong><p>BSc in Management Information Systems (Special)</p></div></div>
+          <div class="info-card"><i class="fas fa-university" aria-hidden="true"></i><div><strong>University</strong><p>NSBM Green University</p></div></div>
+          <div class="info-card"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><div><strong>Location</strong><p>Sri Lanka</p></div></div>
+          <div class="info-card"><i class="fas fa-briefcase" aria-hidden="true"></i><div><strong>Looking For</strong><p>Internship — Project Management / Business Analysis</p></div></div>
+          <div class="info-card"><i class="fas fa-envelope" aria-hidden="true"></i><div><strong>Email</strong><p>amandirajapaksha2003@gmail.com</p></div></div>
+          <div class="info-card"><i class="fas fa-language" aria-hidden="true"></i><div><strong>Languages</strong><p>Sinhala (Native) · English (Intermediate)</p></div></div>
+        </div>
+      </div>
+
+      <div class="work-strip reveal">
+        <div class="work-step">
+          <span class="work-icon"><i class="fas fa-clipboard-list" aria-hidden="true"></i></span>
+          <div><strong>Plan</strong><p>Scope, milestones and budgets</p></div>
+        </div>
+        <div class="work-step">
+          <span class="work-icon"><i class="fas fa-diagram-project" aria-hidden="true"></i></span>
+          <div><strong>Analyse</strong><p>Requirements, stakeholders and process clarity</p></div>
+        </div>
+        <div class="work-step">
+          <span class="work-icon"><i class="fas fa-circle-check" aria-hidden="true"></i></span>
+          <div><strong>Deliver</strong><p>Clear reporting, communication and follow-through</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SKILLS -->
-  <section class="section section-alt" id="skills">
+  <!-- EXPERIENCE -->
+  <section class="section section-alt" id="experience">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">What I Know</span>
-        <h2>Skills</h2>
+        <span class="section-tag">02 / Experience &amp; Leadership</span>
+        <h2>Experience &amp; Leadership</h2>
         <div class="header-line"></div>
       </div>
-      <div class="skills-grid">
-        <div class="skill-category reveal">
-          <h3><i class="fas fa-laptop-code"></i> Technical Skills</h3>
-          <div class="skill-bars">
-            <div class="skill-bar"><span>HTML / CSS</span><div class="bar"><div class="bar-fill" data-w="85"></div></div><span class="pct">85%</span></div>
-            <div class="skill-bar"><span>JavaScript</span><div class="bar"><div class="bar-fill" data-w="70"></div></div><span class="pct">70%</span></div>
-            <div class="skill-bar"><span>React</span><div class="bar"><div class="bar-fill" data-w="60"></div></div><span class="pct">60%</span></div>
-            <div class="skill-bar"><span>Java</span><div class="bar"><div class="bar-fill" data-w="55"></div></div><span class="pct">55%</span></div>
-            <div class="skill-bar"><span>PHP</span><div class="bar"><div class="bar-fill" data-w="55"></div></div><span class="pct">55%</span></div>
-            <div class="skill-bar"><span>SQL / MySQL</span><div class="bar"><div class="bar-fill" data-w="75"></div></div><span class="pct">75%</span></div>
-            <div class="skill-bar"><span>Python</span><div class="bar"><div class="bar-fill" data-w="55"></div></div><span class="pct">55%</span></div>
-          </div>
-        </div>
-        <div class="skill-category reveal delay-1">
-          <h3><i class="fas fa-briefcase"></i> Business Skills</h3>
-          <div class="skill-bars">
-            <div class="skill-bar"><span>Data Analysis</span><div class="bar"><div class="bar-fill" data-w="70"></div></div><span class="pct">70%</span></div>
-            <div class="skill-bar"><span>Project Management</span><div class="bar"><div class="bar-fill" data-w="72"></div></div><span class="pct">72%</span></div>
-            <div class="skill-bar"><span>Business Analysis</span><div class="bar"><div class="bar-fill" data-w="65"></div></div><span class="pct">65%</span></div>
-            <div class="skill-bar"><span>IT Solutions</span><div class="bar"><div class="bar-fill" data-w="70"></div></div><span class="pct">70%</span></div>
-            <div class="skill-bar"><span>Report Writing</span><div class="bar"><div class="bar-fill" data-w="78"></div></div><span class="pct">78%</span></div>
-            <!-- TODO(owner): review these percentages and adjust every bar to a level you can defend in an interview. -->
-            <div class="skill-bar"><span>Requirements Gathering</span><div class="bar"><div class="bar-fill" data-w="65"></div></div><span class="pct">65%</span></div>
-            <div class="skill-bar"><span>Stakeholder Analysis</span><div class="bar"><div class="bar-fill" data-w="60"></div></div><span class="pct">60%</span></div>
-            <div class="skill-bar"><span>Process Modelling (AS-IS/TO-BE)</span><div class="bar"><div class="bar-fill" data-w="60"></div></div><span class="pct">60%</span></div>
-            <div class="skill-bar"><span>Gap & Root-Cause Analysis</span><div class="bar"><div class="bar-fill" data-w="60"></div></div><span class="pct">60%</span></div>
-            <div class="skill-bar"><span>Agile / Scrum</span><div class="bar"><div class="bar-fill" data-w="65"></div></div><span class="pct">65%</span></div>
-            <div class="skill-bar"><span>Risk Management</span><div class="bar"><div class="bar-fill" data-w="55"></div></div><span class="pct">55%</span></div>
-            <div class="skill-bar"><span>Budgeting & Financial Reporting</span><div class="bar"><div class="bar-fill" data-w="75"></div></div><span class="pct">75%</span></div>
-            <div class="skill-bar"><span>Project Planning & Scheduling</span><div class="bar"><div class="bar-fill" data-w="65"></div></div><span class="pct">65%</span></div>
-            <div class="skill-bar"><span>Documentation (BRD/FRD)</span><div class="bar"><div class="bar-fill" data-w="65"></div></div><span class="pct">65%</span></div>
-            <div class="skill-bar"><span>Communication & Presentation</span><div class="bar"><div class="bar-fill" data-w="75"></div></div><span class="pct">75%</span></div>
-            <div class="skill-bar"><span>Leadership</span><div class="bar"><div class="bar-fill" data-w="70"></div></div><span class="pct">70%</span></div>
-          </div>
-        </div>
-        <div class="skill-category reveal delay-2">
-          <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
-          <div class="tool-groups">
-            <div class="tool-group">
-              <h4>Project Management</h4>
-              <div class="tool-badges">
-                <span class="badge"><i class="fab fa-trello"></i> Trello</span>
-                <span class="badge">ClickUp</span>
-                <span class="badge">Notion</span>
-                <span class="badge"><i class="fab fa-jira"></i> Jira</span>
-                <span class="badge">Asana</span>
-                <span class="badge">Microsoft Project</span>
-                <span class="badge">Monday.com</span>
-                <span class="badge">Gantt charts</span>
-                <span class="badge">Kanban / Scrum boards</span>
-              </div>
-              <!-- TODO(owner): confirm which PM tools you have actually used (ClickUp, Asana, Microsoft Project, Monday.com); remove the rest before publishing. -->
-            </div>
+      <div class="timeline">
 
-            <div class="tool-group">
-              <h4>Business Analysis & Modelling</h4>
-              <div class="tool-badges">
-                <span class="badge">BPMN</span>
-                <span class="badge">UML (use case, activity, sequence)</span>
-                <span class="badge">Draw.io / Lucidchart</span>
-                <span class="badge"><i class="fab fa-figma"></i> Figma (wireframes)</span>
-                <span class="badge">Balsamiq</span>
-                <span class="badge">User stories & acceptance criteria</span>
-                <span class="badge">Requirements traceability matrix</span>
-                <span class="badge">SWOT</span>
-                <span class="badge">MoSCoW</span>
-              </div>
-              <!-- TODO(owner): confirm Draw.io / Lucidchart, Balsamiq and requirements traceability matrix experience before publishing. -->
-            </div>
-
-            <div class="tool-group">
-              <h4>Data & Reporting</h4>
-              <div class="tool-badges">
-                <span class="badge"><i class="fas fa-file-excel"></i> Excel (pivot tables, formulas, dashboards)</span>
-                <span class="badge">Power BI</span>
-                <span class="badge"><i class="fas fa-database"></i> SQL (basic)</span>
-                <span class="badge">Google Sheets</span>
-              </div>
-            </div>
-
-            <div class="tool-group">
-              <h4>Collaboration & Docs</h4>
-              <div class="tool-badges">
-                <span class="badge"><i class="fab fa-confluence"></i> Confluence</span>
-                <span class="badge"><i class="fab fa-microsoft"></i> Microsoft Teams</span>
-                <span class="badge"><i class="fab fa-slack"></i> Slack</span>
-                <span class="badge"><i class="fab fa-google"></i> Google Workspace</span>
-                <span class="badge"><i class="fas fa-file-word"></i> MS Word / PowerPoint</span>
-                <span class="badge">MS Office</span>
-                <span class="badge"><i class="fab fa-canva"></i> Canva</span>
-              </div>
-              <!-- TODO(owner): confirm Confluence, Slack and Microsoft Teams experience before publishing. -->
-            </div>
-
-            <div class="tool-group">
-              <h4>Dev (supporting)</h4>
-              <div class="tool-badges">
-                <span class="badge"><i class="fab fa-html5"></i> HTML</span>
-                <span class="badge"><i class="fab fa-css3-alt"></i> CSS</span>
-                <span class="badge"><i class="fab fa-js"></i> JavaScript</span>
-                <span class="badge"><i class="fab fa-react"></i> React</span>
-                <span class="badge"><i class="fab fa-java"></i> Java</span>
-                <span class="badge"><i class="fab fa-node-js"></i> Node.js</span>
-                <span class="badge"><i class="fab fa-php"></i> PHP</span>
-                <span class="badge">Spring Boot</span>
-                <span class="badge">Tailwind CSS</span>
-                <span class="badge">Bootstrap</span>
-                <span class="badge"><i class="fas fa-database"></i> MySQL</span>
-                <span class="badge">Postman</span>
-                <span class="badge"><i class="fab fa-github"></i> GitHub</span>
-              </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot ieee"><i class="fas fa-bolt"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-badge ieee-badge">IEEE</div>
+            <span class="timeline-date">May 2026 – Present</span>
+            <h3>Standards Committee Member — Finance Team</h3>
+            <p class="timeline-place"><i class="fas fa-microchip"></i> IEEE Student Branch · NSBM Green University</p>
+            <p>Appointed as a Standards Committee Member in the Finance Team of the IEEE Student Branch at NSBM Green University. Contributing to financial planning, budgeting and standards compliance for university-level IEEE events and activities.</p>
+            <div class="timeline-skills">
+              <span>Finance</span><span>Standards</span><span>Budgeting</span><span>IEEE</span><span>Leadership</span>
             </div>
           </div>
         </div>
+
+        <div class="timeline-item leadership reveal delay-1">
+          <div class="timeline-dot"><i class="fas fa-hand-holding-dollar"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-badge volunteer">Leadership</div>
+            <span class="timeline-date">Sep 4 – Oct 28, 2026</span>
+            <h3>Organizing Committee Vice President — Finance Team</h3>
+            <p class="timeline-place"><i class="fas fa-university"></i> Students' Wellbeing Association of NSBM · <strong>"Harithawarjana"</strong> event</p>
+            <p>Served as Vice President of the Finance Team on the organizing committee of the <strong>"Harithawarjana"</strong> event. Led fundraising efforts, planned and managed the event budget, and prepared budget reports to keep the committee informed on spending.</p>
+            <div class="timeline-skills">
+              <span>Fundraising</span><span>Budgeting</span><span>Budget Reporting</span><span>Leadership</span><span>Event Management</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-2">
+          <div class="timeline-dot"><i class="fas fa-users"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-badge volunteer">Volunteer</div>
+            <span class="timeline-date">2025</span>
+            <h3>Organizing Committee Member</h3>
+            <p class="timeline-place"><i class="fas fa-university"></i> Students' Wellbeing Association of NSBM</p>
+            <p>Received a Certificate of Appreciation for contributions as an Organizing Committee Member at the <strong>"Linkup – August Meetup"</strong>. Worked with a team to plan and deliver a successful student event, developing leadership, teamwork and event management skills.</p>
+            <div class="timeline-skills">
+              <span>Leadership</span><span>Event Management</span><span>Teamwork</span><span>Communication</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-2">
+          <div class="timeline-dot"><i class="fas fa-landmark"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-badge intern">Internship</div>
+            <span class="timeline-date">Bank of Ceylon · 2023 – 2024</span>
+            <h3>Banking Intern</h3>
+            <p class="timeline-place"><i class="fas fa-building"></i> Bank of Ceylon · Sri Lanka</p>
+            <p>Supported daily banking operations, assisted customers with banking-related inquiries and handled documentation processes. Gained hands-on experience in financial service practices, teamwork and professional communication.</p>
+            <div class="timeline-skills">
+              <span>Financial Services</span><span>Customer Service</span><span>Documentation</span><span>Teamwork</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-3">
+          <div class="timeline-dot"><i class="fab fa-github"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-badge dev">Development</div>
+            <span class="timeline-date">2024 – Present</span>
+            <h3>Open Source Contributor</h3>
+            <p class="timeline-place"><i class="fab fa-github"></i> GitHub — github.com/Amandi1020</p>
+            <p>Consistently building and publishing projects on GitHub. Contributed to group projects including the Task Management System (Spring Boot + React) and Salon Nilu (PHP + MySQL). Earned the GitHub Pull Shark achievement through active contributions.</p>
+            <div class="timeline-skills">
+              <span>React</span><span>Spring Boot</span><span>PHP</span><span>MySQL</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -233,87 +236,338 @@
   <section class="section" id="projects">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">What I've Built</span>
+        <span class="section-tag">03 / What I've Built</span>
         <h2>Projects</h2>
         <div class="header-line"></div>
       </div>
-      <div class="projects-grid">
+      <div class="project-filters" role="group" aria-label="Filter projects">
+        <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Web</button>
+        <button class="filter-btn" type="button" data-filter="group" aria-pressed="false">Group</button>
+        <button class="filter-btn" type="button" data-filter="individual" aria-pressed="false">Individual</button>
+      </div>
+      <div class="projects-grid" id="projectGrid">
 
-        <div class="project-card reveal">
-          <div class="project-img" style="background:linear-gradient(135deg,rgba(183,110,121,0.18),rgba(200,169,126,0.1))"><i class="fas fa-paw"></i></div>
+        <article class="project-card featured reveal" data-category="individual web">
+          <div class="project-img featured-img" style="background:linear-gradient(135deg,rgba(183,110,121,0.22),rgba(200,169,126,0.12))"><i class="fas fa-recycle" aria-hidden="true"></i></div>
           <div class="project-body">
-            <span class="project-type solo">👤 Individual Project</span>
+            <div class="project-meta">
+              <span class="project-type solo">Individual Project</span>
+              <span class="project-featured">Featured</span>
+            </div>
+            <div class="project-tags"><span>React</span><span>Node.js</span><span>Express</span><span>MySQL</span><span>JWT</span><span>Tailwind CSS</span></div>
+            <h3>EcoTrack — Community Recycling Tracker</h3>
+            <p>Gamified recycling platform for Sri Lanka's 25 districts with resident / collector / admin roles, points, levels and badges, CO₂ savings calculator, leaderboard and admin analytics dashboards.</p>
+            <div class="project-links">
+              <a href="https://github.com/Amandi1020/community-recycling-tracker" target="_blank" rel="noopener" class="btn-sm"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+              <a href="https://community-recycling-tracker.vercel.app" target="_blank" rel="noopener" class="btn-sm btn-sm-outline">Live <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-card reveal" data-category="individual web">
+          <div class="project-img" style="background:linear-gradient(135deg,rgba(183,110,121,0.18),rgba(200,169,126,0.1))"><i class="fas fa-paw" aria-hidden="true"></i></div>
+          <div class="project-body">
+            <span class="project-type solo">Individual Project</span>
             <div class="project-tags"><span>React</span><span>Java</span><span>JavaScript</span><span>MySQL</span></div>
             <h3>Pet Adoption & Care System</h3>
             <p>A full-stack web system for pet adoption and care information management with frontend, backend and database layers.</p>
             <div class="project-links">
-              <a href="https://github.com/Amandi1020/pet-adoption-system" target="_blank" class="btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              <a href="https://github.com/Amandi1020/pet-adoption-system" target="_blank" rel="noopener" class="btn-sm"><i class="fab fa-github"></i> GitHub</a>
             </div>
           </div>
         </div>
 
-        <div class="project-card reveal delay-1">
-          <div class="project-img" style="background:linear-gradient(135deg,rgba(200,169,126,0.18),rgba(183,110,121,0.1))"><i class="fas fa-tasks"></i></div>
+        <div class="project-card reveal delay-1" data-category="group web">
+          <div class="project-img" style="background:linear-gradient(135deg,rgba(200,169,126,0.18),rgba(183,110,121,0.1))"><i class="fas fa-tasks" aria-hidden="true"></i></div>
           <div class="project-body">
-            <span class="project-type group">👥 Group Project</span>
+            <span class="project-type group">Group Project</span>
             <div class="project-tags"><span>Spring Boot</span><span>React</span><span>MySQL</span><span>JWT</span></div>
             <h3>Task Management System</h3>
             <p>Enterprise full-stack task manager with JWT auth, email notifications, PDF/CSV export and admin dashboard with charts.</p>
             <div class="project-links">
-              <a href="https://github.com/Chamindu18/task-management-system" target="_blank" class="btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              <a href="https://github.com/Chamindu18/task-management-system" target="_blank" rel="noopener" class="btn-sm"><i class="fab fa-github"></i> GitHub</a>
             </div>
           </div>
         </div>
 
-        <div class="project-card reveal delay-2">
-          <div class="project-img" style="background:linear-gradient(135deg,rgba(183,110,121,0.15),rgba(200,169,126,0.12))"><i class="fas fa-cut"></i></div>
+        <div class="project-card reveal delay-2" data-category="group web">
+          <div class="project-img" style="background:linear-gradient(135deg,rgba(183,110,121,0.15),rgba(200,169,126,0.12))"><i class="fas fa-cut" aria-hidden="true"></i></div>
           <div class="project-body">
-            <span class="project-type group">👥 Group Project</span>
+            <span class="project-type group">Group Project</span>
             <div class="project-tags"><span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>HTML</span></div>
             <h3>Salon Nilu — Beauty Salon Website</h3>
             <p>Full-featured salon website with online booking, service catalog, gallery, customer reviews and complete admin dashboard.</p>
             <div class="project-links">
-              <a href="https://github.com/SanukaWaravita/SalonNilu" target="_blank" class="btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              <a href="https://github.com/SanukaWaravita/SalonNilu" target="_blank" rel="noopener" class="btn-sm"><i class="fab fa-github"></i> GitHub</a>
             </div>
           </div>
         </div>
 
-        <div class="project-card reveal">
-          <div class="project-img" style="background:linear-gradient(135deg,rgba(200,169,126,0.15),rgba(183,110,121,0.1))"><i class="fab fa-react"></i></div>
+        <div class="project-card reveal" data-category="individual web">
+          <div class="project-img" style="background:linear-gradient(135deg,rgba(200,169,126,0.15),rgba(183,110,121,0.1))"><i class="fab fa-react" aria-hidden="true"></i></div>
           <div class="project-body">
-            <span class="project-type solo">👤 Individual Project</span>
+            <span class="project-type solo">Individual Project</span>
             <div class="project-tags"><span>React</span><span>JavaScript</span><span>CSS</span></div>
             <h3>React Login & Signup Page</h3>
             <p>A clean login and signup interface built with React, customized with personal styling and component design.</p>
             <div class="project-links">
-              <a href="https://github.com/Amandi1020/react-login-signup" target="_blank" class="btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              <!-- TODO(owner): confirm or replace this repository URL; it currently returns 404. -->
+              <a href="https://github.com/Amandi1020/react-login-signup" target="_blank" rel="noopener" class="btn-sm"><i class="fab fa-github"></i> GitHub</a>
             </div>
           </div>
         </div>
 
-        <div class="project-card reveal delay-1">
-          <div class="project-img" style="background:linear-gradient(135deg,rgba(183,110,121,0.15),rgba(200,169,126,0.1))"><i class="fas fa-calculator"></i></div>
+        <div class="project-card reveal delay-1" data-category="individual web">
+          <div class="project-img" style="background:linear-gradient(135deg,rgba(183,110,121,0.15),rgba(200,169,126,0.1))"><i class="fas fa-calculator" aria-hidden="true"></i></div>
           <div class="project-body">
-            <span class="project-type solo">👤 Individual Project</span>
+            <span class="project-type solo">Individual Project</span>
             <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
             <h3>Simple Calculator</h3>
             <p>A web-based calculator with a clean modern UI supporting basic arithmetic operations, AC/delete and real-time display.</p>
             <div class="project-links">
-              <a href="https://github.com/Amandi1020/simple-calculator" target="_blank" class="btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              <a href="https://github.com/Amandi1020/simple-calculator" target="_blank" rel="noopener" class="btn-sm"><i class="fab fa-github"></i> GitHub</a>
             </div>
           </div>
         </div>
 
-        <div class="project-card reveal delay-2">
-          <div class="project-img" style="background:linear-gradient(135deg,rgba(183,110,121,0.12),rgba(200,169,126,0.1))"><i class="fas fa-globe"></i></div>
+        <div class="project-card reveal delay-2" data-category="individual web">
+          <div class="project-img" style="background:linear-gradient(135deg,rgba(183,110,121,0.12),rgba(200,169,126,0.1))"><i class="fas fa-globe" aria-hidden="true"></i></div>
           <div class="project-body">
-            <span class="project-type solo">👤 Individual Project</span>
+            <span class="project-type solo">Individual Project</span>
             <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
             <h3>Personal Portfolio</h3>
-            <p>This portfolio — built from scratch with rose gold theme, particle effects, animations and fully responsive layout.</p>
+            <p>This portfolio — built from scratch with a refined rose-gold theme, scroll animations and a fully responsive layout.</p>
             <div class="project-links">
-              <a href="https://github.com/Amandi1020/Amandi-Portfolio" target="_blank" class="btn-sm"><i class="fab fa-github"></i> GitHub</a>
-              <a href="https://amandi1020.github.io/Amandi-Portfolio/" target="_blank" class="btn-sm btn-sm-outline">Live <i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/Amandi1020/Amandi-Portfolio" target="_blank" rel="noopener" class="btn-sm"><i class="fab fa-github"></i> GitHub</a>
+              <a href="https://amandi1020.github.io/Amandi-Portfolio/" target="_blank" rel="noopener" class="btn-sm btn-sm-outline">Live <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 / What I Know</span>
+        <h2>Skills</h2>
+        <div class="header-line"></div>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-category reveal">
+          <div class="skill-head">
+            <span class="skill-index">01</span>
+            <h3><i class="fas fa-briefcase" aria-hidden="true"></i> Project Management</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip">Project Management</span>
+            <span class="skill-chip">Project Planning &amp; Scheduling</span>
+            <span class="skill-chip">Agile / Scrum</span>
+            <span class="skill-chip">Risk Management</span>
+            <span class="skill-chip">Budgeting &amp; Financial Reporting</span>
+            <span class="skill-chip">Stakeholder Analysis</span>
+            <span class="skill-chip">Leadership</span>
+            <span class="skill-chip">Communication &amp; Presentation</span>
+            <span class="skill-chip"><i class="fab fa-trello" aria-hidden="true"></i> Trello</span>
+            <span class="skill-chip"><i class="fab fa-jira" aria-hidden="true"></i> Jira</span>
+            <span class="skill-chip">ClickUp</span>
+            <span class="skill-chip">Notion</span>
+            <span class="skill-chip">Asana</span>
+            <span class="skill-chip">Microsoft Project</span>
+            <span class="skill-chip">Monday.com</span>
+            <span class="skill-chip">Gantt charts</span>
+            <span class="skill-chip">Kanban / Scrum boards</span>
+          </div>
+          <!-- TODO(owner): confirm which PM tools you have actually used (ClickUp, Asana, Microsoft Project, Monday.com); remove the rest before publishing. -->
+        </article>
+
+        <article class="skill-category reveal delay-1">
+          <div class="skill-head">
+            <span class="skill-index">02</span>
+            <h3><i class="fas fa-diagram-project" aria-hidden="true"></i> Business Analysis</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip">Business Analysis</span>
+            <span class="skill-chip">Requirements Gathering</span>
+            <span class="skill-chip">Process Modelling (AS-IS/TO-BE)</span>
+            <span class="skill-chip">Gap &amp; Root-Cause Analysis</span>
+            <span class="skill-chip">Documentation (BRD/FRD)</span>
+            <span class="skill-chip">User stories &amp; acceptance criteria</span>
+            <span class="skill-chip">Requirements traceability matrix</span>
+            <span class="skill-chip">SWOT</span>
+            <span class="skill-chip">MoSCoW</span>
+            <span class="skill-chip">BPMN</span>
+            <span class="skill-chip">UML (use case, activity, sequence)</span>
+            <span class="skill-chip">Draw.io / Lucidchart</span>
+            <span class="skill-chip"><i class="fab fa-figma" aria-hidden="true"></i> Figma (wireframes)</span>
+            <span class="skill-chip">Balsamiq</span>
+          </div>
+          <!-- TODO(owner): confirm Draw.io / Lucidchart, Balsamiq and requirements traceability matrix experience before publishing. -->
+        </article>
+
+        <article class="skill-category reveal delay-2">
+          <div class="skill-head">
+            <span class="skill-index">03</span>
+            <h3><i class="fas fa-chart-line" aria-hidden="true"></i> Data &amp; Reporting</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip">Data Analysis</span>
+            <span class="skill-chip">Report Writing</span>
+            <span class="skill-chip"><i class="fas fa-database" aria-hidden="true"></i> SQL / MySQL</span>
+            <span class="skill-chip"><i class="fas fa-file-excel" aria-hidden="true"></i> Excel (pivot tables, formulas, dashboards)</span>
+            <span class="skill-chip">Power BI</span>
+            <span class="skill-chip">Google Sheets</span>
+          </div>
+        </article>
+
+        <article class="skill-category reveal">
+          <div class="skill-head">
+            <span class="skill-index">04</span>
+            <h3><i class="fas fa-people-group" aria-hidden="true"></i> Collaboration</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip"><i class="fab fa-confluence" aria-hidden="true"></i> Confluence</span>
+            <span class="skill-chip"><i class="fab fa-microsoft" aria-hidden="true"></i> Microsoft Teams</span>
+            <span class="skill-chip"><i class="fab fa-slack" aria-hidden="true"></i> Slack</span>
+            <span class="skill-chip"><i class="fab fa-google" aria-hidden="true"></i> Google Workspace</span>
+            <span class="skill-chip"><i class="fas fa-file-word" aria-hidden="true"></i> MS Word / PowerPoint</span>
+            <span class="skill-chip">MS Office</span>
+            <span class="skill-chip"><i class="fab fa-canva" aria-hidden="true"></i> Canva</span>
+          </div>
+          <!-- TODO(owner): confirm Confluence, Slack and Microsoft Teams experience before publishing. -->
+        </article>
+
+        <article class="skill-category reveal delay-1">
+          <div class="skill-head">
+            <span class="skill-index">05</span>
+            <h3><i class="fas fa-code" aria-hidden="true"></i> Development</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip">IT Solutions</span>
+            <span class="skill-chip"><i class="fab fa-html5" aria-hidden="true"></i> HTML / CSS</span>
+            <span class="skill-chip"><i class="fab fa-js" aria-hidden="true"></i> JavaScript</span>
+            <span class="skill-chip"><i class="fab fa-react" aria-hidden="true"></i> React</span>
+            <span class="skill-chip"><i class="fab fa-java" aria-hidden="true"></i> Java</span>
+            <span class="skill-chip"><i class="fab fa-node-js" aria-hidden="true"></i> Node.js</span>
+            <span class="skill-chip"><i class="fab fa-php" aria-hidden="true"></i> PHP</span>
+            <span class="skill-chip">Spring Boot</span>
+            <span class="skill-chip">Tailwind CSS</span>
+            <span class="skill-chip">Bootstrap</span>
+            <span class="skill-chip">Python</span>
+            <span class="skill-chip">Postman</span>
+            <span class="skill-chip"><i class="fab fa-github" aria-hidden="true"></i> GitHub</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 / Credentials</span>
+        <h2>Certifications</h2>
+        <div class="header-line"></div>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-img-wrap">
+            <img src="assets/img/MIS.jpg" alt="Saylor Academy BUS206 Management Information Systems certificate" loading="lazy" decoding="async"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="cert-img-placeholder"><i class="fas fa-certificate" aria-hidden="true"></i><span>Certificate preview unavailable</span></div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-icon-sm"><i class="fas fa-graduation-cap"></i></div>
+            <div class="cert-info">
+              <h3>BUS206: Management Information Systems</h3>
+              <p class="cert-issuer"><i class="fas fa-building"></i> Saylor Academy</p>
+              <p class="cert-date"><i class="fas fa-calendar"></i> 2026</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card reveal delay-1">
+          <div class="cert-img-wrap">
+            <img src="assets/img/DITEC.jpeg" alt="Pearson Assured Diploma in Information Technology (DITEC) certificate" loading="lazy" decoding="async"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="cert-img-placeholder"><i class="fas fa-certificate" aria-hidden="true"></i><span>Certificate preview unavailable</span></div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-icon-sm"><i class="fas fa-laptop-code"></i></div>
+            <div class="cert-info">
+              <h3>Pearson Assured Diploma in IT (DITEC)</h3>
+              <p class="cert-issuer"><i class="fas fa-building"></i> Pearson / ESOFT Metro Campus</p>
+              <p class="cert-date"><i class="fas fa-calendar"></i> 2026</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card reveal delay-2">
+          <div class="cert-img-wrap">
+            <img src="assets/img/IBM-PM.jpg" alt="IBM SkillsBuild Project Management Fundamentals certificate" loading="lazy" decoding="async"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="cert-img-placeholder"><i class="fas fa-certificate" aria-hidden="true"></i><span>Certificate preview unavailable</span></div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-icon-sm"><i class="fas fa-project-diagram"></i></div>
+            <div class="cert-info">
+              <h3>Project Management Fundamentals</h3>
+              <p class="cert-issuer"><i class="fas fa-building"></i> IBM SkillsBuild</p>
+              <p class="cert-date"><i class="fas fa-calendar"></i> 2026</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card reveal delay-3">
+          <div class="cert-img-wrap">
+            <img src="assets/img/Project-Management.jpg" alt="Simplilearn Project Management 101 certificate" loading="lazy" decoding="async"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="cert-img-placeholder"><i class="fas fa-certificate" aria-hidden="true"></i><span>Certificate preview unavailable</span></div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-icon-sm"><i class="fas fa-tasks"></i></div>
+            <div class="cert-info">
+              <h3>Project Management 101</h3>
+              <p class="cert-issuer"><i class="fas fa-building"></i> Simplilearn</p>
+              <p class="cert-date"><i class="fas fa-calendar"></i> 2026</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-img-wrap">
+            <img src="assets/img/UI-UX.jpg" alt="Simplilearn Introduction to Graphic Design and UI/UX Basics certificate" loading="lazy" decoding="async"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="cert-img-placeholder"><i class="fas fa-certificate" aria-hidden="true"></i><span>Certificate preview unavailable</span></div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-icon-sm"><i class="fas fa-paint-brush"></i></div>
+            <div class="cert-info">
+              <h3>Introduction to Graphic Design & UI/UX Basics</h3>
+              <p class="cert-issuer"><i class="fas fa-building"></i> Simplilearn</p>
+              <p class="cert-date"><i class="fas fa-calendar"></i> 2026</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card reveal delay-2">
+          <div class="cert-img-wrap">
+            <img src="assets/img/Agile-Project-Management.jpg" alt="HP LIFE Agile Project Management certificate" loading="lazy" decoding="async"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="cert-img-placeholder"><i class="fas fa-certificate" aria-hidden="true"></i><span>Certificate preview unavailable</span></div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-icon-sm"><i class="fas fa-sync-alt"></i></div>
+            <div class="cert-info">
+              <h3>Agile Project Management</h3>
+              <p class="cert-issuer"><i class="fas fa-building"></i> HP LIFE</p>
+              <p class="cert-date"><i class="fas fa-calendar"></i> 2026</p>
             </div>
           </div>
         </div>
@@ -326,7 +580,7 @@
   <section class="section section-alt" id="education">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">My Journey</span>
+        <span class="section-tag">06 / My Journey</span>
         <h2>Education</h2>
         <div class="header-line"></div>
       </div>
@@ -397,205 +651,11 @@
     </div>
   </section>
 
-  <!-- CERTIFICATIONS -->
-  <section class="section" id="certifications">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Credentials</span>
-        <h2>Certifications</h2>
-        <div class="header-line"></div>
-      </div>
-      <div class="certs-grid">
-
-        <div class="cert-card reveal">
-          <div class="cert-img-wrap">
-            <img src="assets/img/MIS.jpg" alt="Saylor Academy BUS206 Management Information Systems certificate" loading="lazy"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
-            <div class="cert-img-placeholder"><i class="fas fa-certificate"></i><span>MIS.jpg</span></div>
-          </div>
-          <div class="cert-body">
-            <div class="cert-icon-sm"><i class="fas fa-graduation-cap"></i></div>
-            <div class="cert-info">
-              <h3>BUS206: Management Information Systems</h3>
-              <p class="cert-issuer"><i class="fas fa-building"></i> Saylor Academy</p>
-              <p class="cert-date"><i class="fas fa-calendar"></i> 2026</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="cert-card reveal delay-1">
-          <div class="cert-img-wrap">
-            <img src="assets/img/DITEC.jpeg" alt="Pearson Assured Diploma in Information Technology (DITEC) certificate" loading="lazy"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
-            <div class="cert-img-placeholder"><i class="fas fa-certificate"></i><span>DITEC.jpeg</span></div>
-          </div>
-          <div class="cert-body">
-            <div class="cert-icon-sm"><i class="fas fa-laptop-code"></i></div>
-            <div class="cert-info">
-              <h3>Pearson Assured Diploma in IT (DITEC)</h3>
-              <p class="cert-issuer"><i class="fas fa-building"></i> Pearson / ESOFT Metro Campus</p>
-              <p class="cert-date"><i class="fas fa-calendar"></i> 2026</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="cert-card reveal delay-2">
-          <div class="cert-img-wrap">
-            <img src="assets/img/IBM-PM.jpg" alt="IBM SkillsBuild Project Management Fundamentals certificate" loading="lazy"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
-            <div class="cert-img-placeholder"><i class="fas fa-certificate"></i><span>IBM-PM.jpg</span></div>
-          </div>
-          <div class="cert-body">
-            <div class="cert-icon-sm"><i class="fas fa-project-diagram"></i></div>
-            <div class="cert-info">
-              <h3>Project Management Fundamentals</h3>
-              <p class="cert-issuer"><i class="fas fa-building"></i> IBM SkillsBuild</p>
-              <p class="cert-date"><i class="fas fa-calendar"></i> 2026</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="cert-card reveal delay-3">
-          <div class="cert-img-wrap">
-            <img src="assets/img/Project-Management.jpg" alt="Simplilearn Project Management 101 certificate" loading="lazy"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
-            <div class="cert-img-placeholder"><i class="fas fa-certificate"></i><span>Project-Management.jpg</span></div>
-          </div>
-          <div class="cert-body">
-            <div class="cert-icon-sm"><i class="fas fa-tasks"></i></div>
-            <div class="cert-info">
-              <h3>Project Management 101</h3>
-              <p class="cert-issuer"><i class="fas fa-building"></i> Simplilearn</p>
-              <p class="cert-date"><i class="fas fa-calendar"></i> 2026</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="cert-card reveal">
-          <div class="cert-img-wrap">
-            <img src="assets/img/UI-UX.jpg" alt="Simplilearn Introduction to Graphic Design and UI/UX Basics certificate" loading="lazy"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
-            <div class="cert-img-placeholder"><i class="fas fa-certificate"></i><span>UI-UX.jpg</span></div>
-          </div>
-          <div class="cert-body">
-            <div class="cert-icon-sm"><i class="fas fa-paint-brush"></i></div>
-            <div class="cert-info">
-              <h3>Introduction to Graphic Design & UI/UX Basics</h3>
-              <p class="cert-issuer"><i class="fas fa-building"></i> Simplilearn</p>
-              <p class="cert-date"><i class="fas fa-calendar"></i> 2026</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="cert-card reveal delay-2">
-          <div class="cert-img-wrap">
-            <img src="assets/img/Agile-Project-Management.jpg" alt="HP LIFE Agile Project Management certificate" loading="lazy"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
-            <div class="cert-img-placeholder"><i class="fas fa-certificate"></i><span>Agile-Project-Management.jpg</span></div>
-          </div>
-          <div class="cert-body">
-            <div class="cert-icon-sm"><i class="fas fa-sync-alt"></i></div>
-            <div class="cert-info">
-              <h3>Agile Project Management</h3>
-              <p class="cert-issuer"><i class="fas fa-building"></i> HP LIFE</p>
-              <p class="cert-date"><i class="fas fa-calendar"></i> 2026</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section class="section section-alt" id="experience">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">My Experience</span>
-        <h2>Experience & Activities</h2>
-        <div class="header-line"></div>
-      </div>
-      <div class="timeline">
-
-        <div class="timeline-item reveal">
-          <div class="timeline-dot ieee"><i class="fas fa-bolt"></i></div>
-          <div class="timeline-card">
-            <div class="timeline-badge ieee-badge">IEEE</div>
-            <span class="timeline-date">May 2026 – Present</span>
-            <h3>Standards Committee Member — Finance Team</h3>
-            <p class="timeline-place"><i class="fas fa-microchip"></i> IEEE Student Branch · NSBM Green University</p>
-            <p>Appointed as a Standards Committee Member in the Finance Team of the IEEE Student Branch at NSBM Green University. Contributing to financial planning, budgeting and standards compliance for university-level IEEE events and activities.</p>
-            <div class="timeline-skills">
-              <span>Finance</span><span>Standards</span><span>Budgeting</span><span>IEEE</span><span>Leadership</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal delay-1">
-          <div class="timeline-dot"><i class="fas fa-hand-holding-dollar"></i></div>
-          <div class="timeline-card">
-            <div class="timeline-badge volunteer">Leadership</div>
-            <span class="timeline-date">Sep 4 – Oct 28, 2026</span>
-            <h3>Organizing Committee Vice President — Finance Team</h3>
-            <p class="timeline-place"><i class="fas fa-university"></i> Students' Wellbeing Association of NSBM · <strong>"Harithawarjana"</strong> event</p>
-            <p>Served as Vice President of the Finance Team on the organizing committee of the <strong>"Harithawarjana"</strong> event. Led fundraising efforts, planned and managed the event budget, and prepared budget reports to keep the committee informed on spending.</p>
-            <div class="timeline-skills">
-              <span>Fundraising</span><span>Budgeting</span><span>Budget Reporting</span><span>Leadership</span><span>Event Management</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal delay-2">
-          <div class="timeline-dot"><i class="fas fa-users"></i></div>
-          <div class="timeline-card">
-            <div class="timeline-badge volunteer">Volunteer</div>
-            <span class="timeline-date">2025</span>
-            <h3>Organizing Committee Member</h3>
-            <p class="timeline-place"><i class="fas fa-university"></i> Students' Wellbeing Association of NSBM</p>
-            <p>Received a Certificate of Appreciation for contributions as an Organizing Committee Member at the <strong>"Linkup – August Meetup"</strong>. Worked with a team to plan and deliver a successful student event, developing leadership, teamwork and event management skills.</p>
-            <div class="timeline-skills">
-              <span>Leadership</span><span>Event Management</span><span>Teamwork</span><span>Communication</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal delay-2">
-          <div class="timeline-dot"><i class="fas fa-landmark"></i></div>
-          <div class="timeline-card">
-            <div class="timeline-badge intern">Internship</div>
-            <span class="timeline-date">Bank of Ceylon · 2023 – 2024</span>
-            <h3>Banking Intern</h3>
-            <p class="timeline-place"><i class="fas fa-building"></i> Bank of Ceylon · Sri Lanka</p>
-            <p>Supported daily banking operations, assisted customers with banking-related inquiries and handled documentation processes. Gained hands-on experience in financial service practices, teamwork and professional communication.</p>
-            <div class="timeline-skills">
-              <span>Financial Services</span><span>Customer Service</span><span>Documentation</span><span>Teamwork</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal delay-3">
-          <div class="timeline-dot"><i class="fab fa-github"></i></div>
-          <div class="timeline-card">
-            <div class="timeline-badge dev">Development</div>
-            <span class="timeline-date">2024 – Present</span>
-            <h3>Open Source Contributor</h3>
-            <p class="timeline-place"><i class="fab fa-github"></i> GitHub — github.com/Amandi1020</p>
-            <p>Consistently building and publishing projects on GitHub. Contributed to group projects including the Task Management System (Spring Boot + React) and Salon Nilu (PHP + MySQL). Earned the GitHub Pull Shark achievement through active contributions.</p>
-            <div class="timeline-skills">
-              <span>React</span><span>Spring Boot</span><span>PHP</span><span>MySQL</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
   <!-- CONTACT -->
   <section class="section" id="contact">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Get In Touch</span>
+        <span class="section-tag">07 / Get In Touch</span>
         <h2>Contact Me</h2>
         <div class="header-line"></div>
       </div>
@@ -603,38 +663,45 @@
         <div class="contact-info reveal">
           <p>I'm open to internship opportunities, collaborations and interesting conversations. Feel free to reach out — I'd love to connect!</p>
           <div class="contact-links">
-            <a href="mailto:amandirajapaksha2003@gmail.com"><i class="fas fa-envelope"></i> amandirajapaksha2003@gmail.com</a>
-            <a href="https://github.com/Amandi1020" target="_blank"><i class="fab fa-github"></i> github.com/Amandi1020</a>
-            <a href="https://www.linkedin.com/in/amandi-rajapaksha-397a21284/" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/amandi-rajapaksha</a>
-            <a href="https://www.instagram.com/amandiiii_03/" target="_blank"><i class="fab fa-instagram"></i> @amandiiii_03</a>
+            <a href="mailto:amandirajapaksha2003@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i> amandirajapaksha2003@gmail.com</a>
+            <a href="https://github.com/Amandi1020" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> github.com/Amandi1020</a>
+            <a href="https://www.linkedin.com/in/amandi-rajapaksha-397a21284/" target="_blank" rel="noopener"><i class="fab fa-linkedin" aria-hidden="true"></i> linkedin.com/in/amandi-rajapaksha</a>
+            <a href="https://www.instagram.com/amandiiii_03/" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i> @amandiiii_03</a>
           </div>
         </div>
+        <!-- TODO(owner): complete FormSubmit activation and test a real submission. -->
         <form class="contact-form reveal delay-1"
           action="https://formsubmit.co/ajax/amandirajapaksha2003@gmail.com"
           method="POST">
           <input type="hidden" name="_subject" value="New message from Portfolio!">
           <input type="hidden" name="_captcha" value="false">
           <input type="text" name="_honey" style="display:none">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+          <input type="text" name="name" placeholder="Your Name" aria-label="Your name" autocomplete="name" required />
+          <input type="email" name="email" placeholder="Your Email" aria-label="Your email" autocomplete="email" required />
+          <textarea name="message" rows="5" placeholder="Your Message" aria-label="Your message" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane" aria-hidden="true"></i></button>
         </form>
       </div>
     </div>
   </section>
 
+  </main>
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-socials">
-      <a href="https://github.com/Amandi1020" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/amandi-rajapaksha-397a21284/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:amandirajapaksha2003@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://www.instagram.com/amandiiii_03/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/Amandi1020" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="fab fa-github" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/amandi-rajapaksha-397a21284/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+      <a href="mailto:amandirajapaksha2003@gmail.com" aria-label="Send email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/amandiiii_03/" target="_blank" rel="noopener" aria-label="Instagram profile"><i class="fab fa-instagram" aria-hidden="true"></i></a>
     </div>
-    <p>Designed & Built by <span>Amandi Rajapaksha</span> · 2026</p>
+    <p>Designed &amp; Built by <span>Amandi Rajapaksha</span> · 2026</p>
     <p class="footer-sub">MIS Undergraduate · NSBM Green University · Sri Lanka</p>
   </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
 
   <script src="js/main.js"></script>
 </body>
