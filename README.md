@@ -8,7 +8,7 @@
 
 ## About This Project
 
-A personal portfolio built from scratch with HTML, CSS and vanilla JavaScript. It presents my work, skills, projects, education, certifications and experience as a third-year **Management Information Systems** undergraduate at **NSBM Green University**, Sri Lanka, seeking **Project Management and Business Analysis** internships.
+A personal portfolio built from scratch with HTML, CSS and vanilla JavaScript. It presents my work, skills, projects, education, certifications, achievements and experience as a third-year **Management Information Systems** undergraduate at **NSBM Green University**, Sri Lanka, seeking **Project Management and Business Analysis** internships.
 
 ---
 
@@ -17,7 +17,12 @@ A personal portfolio built from scratch with HTML, CSS and vanilla JavaScript. I
 - Refined rose-gold dark theme with Playfair Display and Inter
 - Responsive layout for mobile, tablet and desktop
 - Accessible navigation with skip link, focus states and ARIA attributes
-- Project filters for All, Web, Group and Individual work
+- Uniform project cards with fixed headers, clamped summaries and up to five tags
+- Project filters for All, Web, Group and Individual work; Mobile and Business Analysis appear automatically when real projects use those categories
+- Three clearly marked upcoming-project placeholders, shown only under All
+- Achievements & Participation section with organizing-committee and participation certificate slots
+- How I Work and What I Can Offer sections focused on PM/BA internship value
+- Résumé download block and a hidden testimonials slot ready for approved quotes
 - Animated stats, scroll reveal, reading progress and back-to-top controls
 - Mobile hamburger navigation with keyboard support
 - Contact form via FormSubmit
@@ -65,11 +70,15 @@ Amandi-Portfolio/
 │   │   ├── pawfind.png                 PawFind project image (unused)
 │   │   └── profile.jpg                 Profile image (GitHub avatar copy)
 │   └── resume.pdf          Downloadable CV
+├── CHANGES.md              Latest change report and verification results
 ├── CONTENT_ALIGNMENT.md    Content gaps and evidence checklist
 ├── REDESIGN_NOTES.md       Design concept, changes and owner TODOs
+├── TODO_OWNER.md           Owner actions for placeholders and missing content
 ├── PORTFOLIO_AUDIT.md      PM/BA portfolio audit
 └── README.md
 ```
+
+Achievement certificate images are not included yet. When supplied, add them to `assets/img/` using the `achievement-<short-name>.jpg` naming rule described in `index.html` and `TODO_OWNER.md`.
 
 ---
 
@@ -96,13 +105,14 @@ Open `http://localhost:8000` in a browser. No build step or package install is r
 | Section | Description |
 |---------|-------------|
 | Hero | Introduction, availability status, CV download and social links |
-| About | Background, stats, quick facts and working approach |
-| Experience | IEEE, Harithawarjana, Linkup, Bank of Ceylon and GitHub experience |
-| Projects | 7 projects with GitHub links, EcoTrack featured |
-| Skills | Project management, business analysis, data, collaboration and development |
+| About | Concise background, verified stats, quick facts, How I Work and What I Can Offer |
+| Experience | Harithawarjana and IEEE leadership first, then Linkup, Bank of Ceylon and GitHub |
+| Projects | 7 real projects in uniform cards plus 3 upcoming-project placeholders |
+| Skills & Tools | Project management, business analysis, data, collaboration and development |
 | Certifications | 6 certificates with image previews |
+| Achievements & Participation | Organizing-committee and participation certificate slots, ready for owner content |
 | Education | BSc MIS, CA, AAT, Pearson DITEC, A/L and O/L |
-| Contact | Contact form and social links |
+| Contact | Résumé download, contact form and social links |
 
 ---
 
