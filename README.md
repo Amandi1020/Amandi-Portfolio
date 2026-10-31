@@ -54,12 +54,14 @@ Amandi-Portfolio/
 │   └── main.js             ← JavaScript interactions
 ├── assets/
 │   ├── img/
-│   │   ├── profile.jpg     ← Profile photo
-│   │   ├── MIS.jpg         ← Saylor Academy certificate
-│   │   ├── DITEC.jpeg      ← Pearson DITEC certificate
-│   │   ├── IBM PM.jpg      ← IBM SkillsBuild certificate
-│   │   ├── Project Management.jpg  ← Simplilearn certificate
-│   │   └── UI UX.jpg       ← Simplilearn UI/UX certificate
+│   │   ├── MIS.jpg                     ← Saylor Academy certificate
+│   │   ├── DITEC.jpeg                  ← Pearson DITEC certificate
+│   │   ├── IBM-PM.jpg                  ← IBM SkillsBuild certificate
+│   │   ├── Project-Management.jpg      ← Simplilearn certificate
+│   │   ├── UI-UX.jpg                   ← Simplilearn UI/UX certificate
+│   │   ├── Agile-Project-Management.jpg ← HP LIFE certificate
+│   │   ├── pawfind.png                 ← PawFind project image (currently unused)
+│   │   └── profile.jpg                 ← Profile photo (not in repo yet; hero falls back to GitHub avatar)
 │   └── resume.pdf          ← Downloadable CV
 └── README.md
 ```
@@ -93,8 +95,8 @@ No installations or dependencies needed — pure HTML, CSS and JavaScript.
 | 👩 About | Personal info, stats and quick info cards |
 | 🛠️ Skills | Technical and business skill bars + tools grid |
 | 📁 Projects | 6 real projects with GitHub links (group & individual) |
-| 🎓 Education | BSc MIS · CA · AAT · DITEC · A/L timeline |
-| 🏆 Certifications | 5 certificates with image previews |
+| 🎓 Education | BSc MIS · CA · AAT · DITEC · A/L · O/L timeline |
+| 🏆 Certifications | 6 certificates with image previews |
 | 💼 Experience | IEEE · Bank of Ceylon · Organizing Committee · GitHub |
 | 📬 Contact | Contact form + social links |
 
